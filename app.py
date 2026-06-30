@@ -66,15 +66,20 @@ def add_all_play(games, draw_margin):
     result["weekly_luck"]=result["league_points"]-result["all_play_points"]
     return result
 
-def standings(games):
+def standings(games, all_time=False):
     table=games.groupby("team").agg(P=("gameweek","count"),W=("result",lambda s:(s=="W").sum()),
         D=("result",lambda s:(s=="D").sum()),L=("result",lambda s:(s=="L").sum()),
         Pts=("league_points","sum"),PF=("score","sum"),PA=("opponent_score","sum"),
         Expected_Pts=("all_play_points","sum"),Schedule_Luck=("weekly_luck","sum"),
         Avg_Opp_Score=("opponent_score","mean"),Avg_Weekly_Rank=("weekly_rank","mean")).reset_index()
     table["Diff"]=table.PF-table.PA
-    table["Luck_per_week"]=table.Schedule_Luck/table.P
-    table=table.sort_values(["Pts","PF"],ascending=[False,False]).reset_index(drop=True)
+    table["PPG"]=table.Pts/table.P
+    table["Expected_PPG"]=table.Expected_Pts/table.P
+    table["Luck_per_game"]=table.Schedule_Luck/table.P
+    if all_time:
+        table=table.sort_values(["PPG","PF"],ascending=[False,False]).reset_index(drop=True)
+    else:
+        table=table.sort_values(["Pts","PF"],ascending=[False,False]).reset_index(drop=True)
     table.insert(0,"Pos",range(1,len(table)+1))
     return table
 
@@ -132,77 +137,106 @@ def longest_streak(results, accepted):
     return best
 
 def record_rows(games):
-    unique=games.sort_values(["gameweek","team"]).drop_duplicates(["gameweek","team"])
+    unique=games.sort_values(["season","gameweek","team"]).drop_duplicates(["season","gameweek","team"])
     matches=unique[unique.team < unique.opponent].copy()
     matches["combined"]=matches.score+matches.opponent_score
     records=[]
+    def where(row):
+        return f"{row.season} · GW{row.gameweek}"
     def add(name,row,value):
         records.append({"Record":name,"Team / Match":row,"Value":value})
-    r=unique.loc[unique.score.idxmax()]; add("Highest score",f"{r.team} — GW{r.gameweek}",f"{r.score:.2f}")
-    r=unique.loc[unique.score.idxmin()]; add("Lowest score",f"{r.team} — GW{r.gameweek}",f"{r.score:.2f}")
+    r=unique.loc[unique.score.idxmax()]; add("Highest score",f"{r.team} — {where(r)}",f"{r.score:.2f}")
+    r=unique.loc[unique.score.idxmin()]; add("Lowest score",f"{r.team} — {where(r)}",f"{r.score:.2f}")
     losses=unique[unique.result=="L"]
-    if len(losses): r=losses.loc[losses.score.idxmax()]; add("Highest score in a loss",f"{r.team} vs {r.opponent} — GW{r.gameweek}",f"{r.score:.2f}")
+    if len(losses):
+        r=losses.loc[losses.score.idxmax()]; add("Highest score in a loss",f"{r.team} vs {r.opponent} — {where(r)}",f"{r.score:.2f}")
     wins=unique[unique.result=="W"]
     if len(wins):
-        r=wins.loc[wins.score.idxmin()]; add("Lowest score in a win",f"{r.team} vs {r.opponent} — GW{r.gameweek}",f"{r.score:.2f}")
-        r=wins.loc[wins.margin.idxmax()]; add("Biggest win",f"{r.team} vs {r.opponent} — GW{r.gameweek}",f"{r.margin:.2f} pts")
-        r=wins.loc[wins.margin.idxmin()]; add("Tightest win",f"{r.team} vs {r.opponent} — GW{r.gameweek}",f"{r.margin:.2f} pts")
+        r=wins.loc[wins.score.idxmin()]; add("Lowest score in a win",f"{r.team} vs {r.opponent} — {where(r)}",f"{r.score:.2f}")
+        r=wins.loc[wins.margin.idxmax()]; add("Biggest win",f"{r.team} vs {r.opponent} — {where(r)}",f"{r.margin:.2f} pts")
+        r=wins.loc[wins.margin.idxmin()]; add("Tightest win",f"{r.team} vs {r.opponent} — {where(r)}",f"{r.margin:.2f} pts")
     if len(matches):
-        r=matches.loc[matches.combined.idxmax()]; add("Highest-scoring match",f"{r.team} vs {r.opponent} — GW{r.gameweek}",f"{r.combined:.2f}")
-        r=matches.loc[matches.combined.idxmin()]; add("Lowest-scoring match",f"{r.team} vs {r.opponent} — GW{r.gameweek}",f"{r.combined:.2f}")
+        r=matches.loc[matches.combined.idxmax()]; add("Highest-scoring match",f"{r.team} vs {r.opponent} — {where(r)}",f"{r.combined:.2f}")
+        r=matches.loc[matches.combined.idxmin()]; add("Lowest-scoring match",f"{r.team} vs {r.opponent} — {where(r)}",f"{r.combined:.2f}")
     for label,accepted in [("Longest winning streak",{"W"}),("Longest unbeaten streak",{"W","D"}),("Longest losing streak",{"L"}),("Longest winless streak",{"L","D"})]:
         vals=[]
-        for team,g in unique.sort_values("gameweek").groupby("team"):
-            vals.append((longest_streak(g.result.tolist(),accepted),team))
-        length,team=max(vals); add(label,team,str(length))
+        for (season_name,team),g in unique.sort_values(["season","gameweek"]).groupby(["season","team"]):
+            vals.append((longest_streak(g.result.tolist(),accepted),team,season_name))
+        length,team,season_name=max(vals); add(label,f"{team} — {season_name}",str(length))
     return pd.DataFrame(records)
 
 raw=load_results(DATA_FILE.stat().st_mtime_ns)
 season_settings=load_season_settings(SEASONS_FILE.stat().st_mtime_ns)
 team_abbreviations=load_team_abbreviations(TEAMS_FILE.stat().st_mtime_ns)
 seasons=sorted(raw.season.unique(),reverse=True)
-season=st.sidebar.selectbox("Season",seasons)
-season_raw=raw[raw.season==season]
-if season not in season_settings:
-    st.error(f"No draw margin has been configured for season {season}. Add it to data/seasons.csv.")
-    st.stop()
-draw_margin=float(season_settings[season])
-max_week=int(season_raw.gameweek.max())
-week_range=st.sidebar.slider("Gameweeks",1,max_week,(1,max_week))
-filtered_raw=season_raw[season_raw.gameweek.between(*week_range)]
-games=add_all_play(long_results(filtered_raw, draw_margin), draw_margin)
+season=st.sidebar.selectbox("Season",["All time"]+seasons)
+is_all_time=season=="All time"
+
+if is_all_time:
+    missing=[s for s in seasons if s not in season_settings]
+    if missing:
+        st.error("No draw margin has been configured for: " + ", ".join(missing) + ". Add them to data/seasons.csv.")
+        st.stop()
+    game_parts=[]
+    for season_name, season_fixtures in raw.groupby("season", sort=False):
+        margin=float(season_settings[season_name])
+        game_parts.append(add_all_play(long_results(season_fixtures, margin), margin))
+    games=pd.concat(game_parts, ignore_index=True).sort_values(["season","gameweek","team"]).reset_index(drop=True)
+    week_range=None
+    draw_margin=None
+else:
+    season_raw=raw[raw.season==season]
+    if season not in season_settings:
+        st.error(f"No draw margin has been configured for season {season}. Add it to data/seasons.csv.")
+        st.stop()
+    draw_margin=float(season_settings[season])
+    max_week=int(season_raw.gameweek.max())
+    week_range=st.sidebar.slider("Gameweeks",1,max_week,(1,max_week))
+    filtered_raw=season_raw[season_raw.gameweek.between(*week_range)]
+    games=add_all_play(long_results(filtered_raw, draw_margin), draw_margin)
+
 teams=sorted(games.team.unique())
 selected_team=st.sidebar.selectbox("Team", teams, key="global_team")
 page=st.sidebar.radio("Page",["League overview","Team analysis","Fixture comparison","Season records","Methodology"])
-margin_text = "Only exact ties are draws" if draw_margin == 0 else f"Draw margin: ±{draw_margin:g} points"
-st.sidebar.caption(f"{margin_text}. A win requires a margin greater than {draw_margin:g}.")
+if is_all_time:
+    st.sidebar.caption("All seasons combined. Each season uses its own configured draw margin.")
+else:
+    margin_text = "Only exact ties are draws" if draw_margin == 0 else f"Draw margin: ±{draw_margin:g} points"
+    st.sidebar.caption(f"{margin_text}. A win requires a margin greater than {draw_margin:g}.")
 
 st.title("⚽ Cheesepionship Luck Tracker")
-st.caption(f"{season} · Gameweeks {week_range[0]}–{week_range[1]}")
+if is_all_time:
+    st.caption(f"All time · {len(seasons)} seasons")
+else:
+    st.caption(f"{season} · Gameweeks {week_range[0]}–{week_range[1]}")
 
 if page=="League overview":
-    table=standings(games)
-    luckiest=table.loc[table.Schedule_Luck.idxmax()]; unluckiest=table.loc[table.Schedule_Luck.idxmin()]
+    table=standings(games, all_time=is_all_time)
+    luck_metric="Luck_per_game" if is_all_time else "Schedule_Luck"
+    luckiest=table.loc[table[luck_metric].idxmax()]; unluckiest=table.loc[table[luck_metric].idxmin()]
     c1,c2,c3,c4=st.columns(4)
-    c1.metric("League leader",team_abbreviations.get(table.iloc[0].team, table.iloc[0].team),f"{table.iloc[0].Pts:.0f} pts")
-    c2.metric("Luckiest",team_abbreviations.get(luckiest.team, luckiest.team),f"{luckiest.Schedule_Luck:+.2f} pts")
-    c3.metric("Unluckiest",team_abbreviations.get(unluckiest.team, unluckiest.team),f"{unluckiest.Schedule_Luck:+.2f} pts")
+    leader_value=f"{table.iloc[0].PPG:.2f} PPG" if is_all_time else f"{table.iloc[0].Pts:.0f} pts"
+    luck_suffix=" per game" if is_all_time else " pts"
+    c1.metric("League leader",team_abbreviations.get(table.iloc[0].team, table.iloc[0].team),leader_value)
+    c2.metric("Luckiest",team_abbreviations.get(luckiest.team, luckiest.team),f"{luckiest[luck_metric]:+.2f}{luck_suffix}")
+    c3.metric("Unluckiest",team_abbreviations.get(unluckiest.team, unluckiest.team),f"{unluckiest[luck_metric]:+.2f}{luck_suffix}")
     highest_scorer=table.loc[table.PF.idxmax()]
     c4.metric("Highest scorer",team_abbreviations.get(highest_scorer.team, highest_scorer.team),f"{highest_scorer.PF:.2f}")
     st.subheader("Standings and schedule luck")
-    show=table.rename(columns={"Expected_Pts":"Expected pts","Schedule_Luck":"Luck","Avg_Opp_Score":"Avg opponent","Avg_Weekly_Rank":"Avg weekly rank"})
-    st.dataframe(show[["Pos","team","P","W","D","L","Pts","PF","PA","Diff","Expected pts","Luck","Avg opponent","Avg weekly rank"]],hide_index=True,use_container_width=True,
-        column_config={"Luck":st.column_config.NumberColumn(format="%+.2f"),"Expected pts":st.column_config.NumberColumn(format="%.2f"),"PF":st.column_config.NumberColumn(format="%.2f"),"PA":st.column_config.NumberColumn(format="%.2f")})
-    chart = table[["team", "Pts", "Expected_Pts"]].rename(
-        columns={"Pts": "Actual points", "Expected_Pts": "Expected points"}
-    )
-    chart = chart.melt(
-        id_vars="team",
-        var_name="Point type",
-        value_name="Points",
-    )
-    team_order = table.sort_values("Pts", ascending=False)["team"].tolist()
-    st.subheader("Actual versus all-play expected points")
+    if is_all_time:
+        show=table.rename(columns={"Expected_PPG":"Expected PPG","Luck_per_game":"Luck per game","Avg_Opp_Score":"Avg opponent"})
+        st.dataframe(show[["Pos","team","P","W","D","L","Pts","PPG","PF","PA","Diff","Expected PPG","Luck per game","Avg opponent"]],hide_index=True,use_container_width=True,
+            column_config={"PPG":st.column_config.NumberColumn(format="%.3f"),"Expected PPG":st.column_config.NumberColumn(format="%.3f"),"Luck per game":st.column_config.NumberColumn(format="%+.3f"),"PF":st.column_config.NumberColumn(format="%.2f"),"PA":st.column_config.NumberColumn(format="%.2f")})
+        chart = table[["team", "PPG", "Expected_PPG"]].rename(columns={"PPG":"Actual points per game","Expected_PPG":"Expected points per game"})
+    else:
+        show=table.rename(columns={"Expected_Pts":"Expected pts","Schedule_Luck":"Luck","Avg_Opp_Score":"Avg opponent","Avg_Weekly_Rank":"Avg weekly rank"})
+        st.dataframe(show[["Pos","team","P","W","D","L","Pts","PF","PA","Diff","Expected pts","Luck","Avg opponent","Avg weekly rank"]],hide_index=True,use_container_width=True,
+            column_config={"Luck":st.column_config.NumberColumn(format="%+.2f"),"Expected pts":st.column_config.NumberColumn(format="%.2f"),"PF":st.column_config.NumberColumn(format="%.2f"),"PA":st.column_config.NumberColumn(format="%.2f")})
+        chart = table[["team", "Pts", "Expected_Pts"]].rename(columns={"Pts": "Actual points", "Expected_Pts": "Expected points"})
+    chart = chart.melt(id_vars="team",var_name="Point type",value_name="Points")
+    order_col="PPG" if is_all_time else "Pts"
+    team_order = table.sort_values(order_col, ascending=False)["team"].tolist()
+    st.subheader("Actual versus all-play expected points" + (" per game" if is_all_time else ""))
     comparison_chart = (
         alt.Chart(chart)
         .mark_bar()
@@ -224,49 +258,53 @@ if page=="League overview":
 elif page=="Team analysis":
     team=selected_team
     st.subheader(team)
-    tg=games[games.team==team].sort_values("gameweek")
+    tg=games[games.team==team].sort_values(["season","gameweek"])
     total=tg.league_points.sum(); expected=tg.all_play_points.sum(); luck=total-expected
     c1,c2,c3,c4=st.columns(4)
     c1.metric("League points",f"{total:.0f}")
     c2.metric("Expected points",f"{expected:.2f}")
     c3.metric("Schedule luck",f"{luck:+.2f}")
-    c4.metric("Average weekly rank",f"{tg.weekly_rank.mean():.2f} / {len(teams)}")
-    cumulative=tg[["gameweek","league_points","all_play_points"]].copy(); cumulative[["league_points","all_play_points"]]=cumulative[["league_points","all_play_points"]].cumsum(); cumulative=cumulative.set_index("gameweek")
-    st.subheader("Cumulative actual and expected points")
-    st.line_chart(cumulative)
-    detail=tg[["gameweek","opponent","score","opponent_score","result","league_points","all_play_points","weekly_luck","weekly_rank"]].copy()
-    detail.columns=["GW","Opponent","Score","Opponent score","Result","Points","Expected points","Luck","Weekly rank"]
-    st.subheader("Weekly detail")
-    st.dataframe(detail,hide_index=True,use_container_width=True,column_config={"Luck":st.column_config.NumberColumn(format="%+.2f"),"Expected points":st.column_config.NumberColumn(format="%.2f")})
+    if is_all_time:
+        c4.metric("Points per game",f"{total/len(tg):.3f}")
+        by_season=(tg.groupby("season",as_index=False)
+            .agg(league_points=("league_points","sum"),all_play_points=("all_play_points","sum"),games=("gameweek","count")))
+        season_order=[s for s in sorted(seasons) if s in by_season.season.values]
+        by_season["season"]=pd.Categorical(by_season["season"],categories=season_order,ordered=True)
+        by_season=by_season.sort_values("season")
+        by_season[["league_points","all_play_points"]]=by_season[["league_points","all_play_points"]].cumsum()
+        cumulative=by_season.set_index("season")[["league_points","all_play_points"]]
+        st.subheader("Cumulative actual and expected points by season")
+        st.line_chart(cumulative)
+        season_summary=(tg.groupby("season",as_index=False)
+            .agg(P=("gameweek","count"),W=("result",lambda s:(s=="W").sum()),D=("result",lambda s:(s=="D").sum()),L=("result",lambda s:(s=="L").sum()),Pts=("league_points","sum"),Expected_Pts=("all_play_points","sum"),PF=("score","sum"),PA=("opponent_score","sum")))
+        season_summary["PPG"]=season_summary.Pts/season_summary.P
+        season_summary["Luck"]=season_summary.Pts-season_summary.Expected_Pts
+        season_summary["Diff"]=season_summary.PF-season_summary.PA
+        st.subheader("Season-by-season record")
+        st.dataframe(season_summary[["season","P","W","D","L","Pts","PPG","Expected_Pts","Luck","PF","PA","Diff"]],hide_index=True,use_container_width=True,
+            column_config={"PPG":st.column_config.NumberColumn(format="%.3f"),"Expected_Pts":st.column_config.NumberColumn(format="%.2f"),"Luck":st.column_config.NumberColumn(format="%+.2f"),"PF":st.column_config.NumberColumn(format="%.2f"),"PA":st.column_config.NumberColumn(format="%.2f"),"Diff":st.column_config.NumberColumn(format="%+.2f")})
+    else:
+        c4.metric("Average weekly rank",f"{tg.weekly_rank.mean():.2f} / {len(teams)}")
+        cumulative=tg[["gameweek","league_points","all_play_points"]].copy(); cumulative[["league_points","all_play_points"]]=cumulative[["league_points","all_play_points"]].cumsum(); cumulative=cumulative.set_index("gameweek")
+        st.subheader("Cumulative actual and expected points")
+        st.line_chart(cumulative)
+        detail=tg[["gameweek","opponent","score","opponent_score","result","league_points","all_play_points","weekly_luck","weekly_rank"]].copy()
+        detail.columns=["GW","Opponent","Score","Opponent score","Result","Points","Expected points","Luck","Weekly rank"]
+        st.subheader("Weekly detail")
+        st.dataframe(detail,hide_index=True,use_container_width=True,column_config={"Luck":st.column_config.NumberColumn(format="%+.2f"),"Expected points":st.column_config.NumberColumn(format="%.2f")})
 
     st.subheader("Record against each opponent")
-    opponent_record=(
-        tg.groupby("opponent", as_index=False)
-        .agg(
-            P=("gameweek","count"),
-            W=("result",lambda s:(s=="W").sum()),
-            D=("result",lambda s:(s=="D").sum()),
-            L=("result",lambda s:(s=="L").sum()),
-            Pts=("league_points","sum"),
-            PF=("score","sum"),
-            PA=("opponent_score","sum"),
-        )
-        .rename(columns={"opponent":"Opponent"})
-    )
-    opponent_record["Diff"]=opponent_record["PF"]-opponent_record["PA"]
-    opponent_record=opponent_record.sort_values(["Pts","Diff","PF"],ascending=[False,False,False]).reset_index(drop=True)
-    st.dataframe(
-        opponent_record[["Opponent","P","W","D","L","Pts","PF","PA","Diff"]],
-        hide_index=True,
-        use_container_width=True,
-        column_config={
-            "PF":st.column_config.NumberColumn(format="%.2f"),
-            "PA":st.column_config.NumberColumn(format="%.2f"),
-            "Diff":st.column_config.NumberColumn(format="%+.2f"),
-        },
-    )
+    opponent_record=(tg.groupby("opponent", as_index=False).agg(P=("gameweek","count"),W=("result",lambda s:(s=="W").sum()),D=("result",lambda s:(s=="D").sum()),L=("result",lambda s:(s=="L").sum()),Pts=("league_points","sum"),PF=("score","sum"),PA=("opponent_score","sum")).rename(columns={"opponent":"Opponent"}))
+    opponent_record["PPG"]=opponent_record.Pts/opponent_record.P
+    opponent_record["Diff"]=opponent_record.PF-opponent_record.PA
+    opponent_record=opponent_record.sort_values(["PPG","Diff","PF"],ascending=[False,False,False]).reset_index(drop=True)
+    cols=["Opponent","P","W","D","L","Pts"] + (["PPG"] if is_all_time else []) + ["PF","PA","Diff"]
+    st.dataframe(opponent_record[cols],hide_index=True,use_container_width=True,column_config={"PPG":st.column_config.NumberColumn(format="%.3f"),"PF":st.column_config.NumberColumn(format="%.2f"),"PA":st.column_config.NumberColumn(format="%.2f"),"Diff":st.column_config.NumberColumn(format="%+.2f")})
 
 elif page=="Fixture comparison":
+    if is_all_time:
+        st.info("Fixture comparison is available for individual seasons only, because teams and fixture structures differ across seasons.")
+        st.stop()
     st.write("Swap the two selected teams' fixture lists while keeping each team's own weekly scores. Weeks where they played each other remain unchanged.")
     score_team=selected_team
     st.caption(f"Using scores from **{score_team}**, selected in the sidebar.")
@@ -347,18 +385,15 @@ elif page=="Fixture comparison":
 elif page=="Season records":
     st.subheader("Records for selected gameweeks")
     st.dataframe(record_rows(games),hide_index=True,use_container_width=True)
-    weekly = games.groupby("gameweek").agg(
-        highest_score=("score", "max"),
-        average_score=("score", "mean"),
-        lowest_score=("score", "min"),
-    ).reset_index()
-    weekly = weekly.rename(columns={
-        "highest_score": "Highest score",
-        "average_score": "Average score",
-        "lowest_score": "Lowest score",
-    })
+    group_cols=["season","gameweek"] if is_all_time else ["gameweek"]
+    weekly = games.groupby(group_cols).agg(highest_score=("score", "max"),average_score=("score", "mean"),lowest_score=("score", "min")).reset_index()
+    weekly = weekly.rename(columns={"highest_score":"Highest score","average_score":"Average score","lowest_score":"Lowest score"})
     st.subheader("Scoring by gameweek")
-    st.line_chart(weekly.set_index("gameweek"))
+    if is_all_time:
+        weekly["Season / GW"]=weekly["season"].astype(str)+" · GW"+weekly["gameweek"].astype(str)
+        st.line_chart(weekly.set_index("Season / GW")[["Highest score","Average score","Lowest score"]])
+    else:
+        st.line_chart(weekly.set_index("gameweek"))
 
 else:
     st.markdown(f"""
@@ -369,7 +404,7 @@ For every gameweek, each team is hypothetically compared with every other team i
 - draw: score difference is **within the season's draw margin, inclusive** — 1 point
 - loss: score is lower by **more than the season's draw margin** — 0 points
 
-The current season's draw margin is **{draw_margin:g}**. A margin of `0` means only an exact tie is a draw.
+{"Each season uses the draw margin configured in data/seasons.csv." if is_all_time else f"The current season's draw margin is **{draw_margin:g}**. A margin of `0` means only an exact tie is a draw."}
 
 The average points from those hypothetical matchups is the team's **all-play expected points** for that week.
 
