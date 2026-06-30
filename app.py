@@ -5,28 +5,47 @@ import streamlit as st
 import altair as alt
 
 st.set_page_config(page_title="Cheesepionship Luck Tracker", page_icon="⚽", layout="wide")
-DATA_FILE = Path(__file__).parent / "data" / "results.csv"
-DRAW_MARGIN = 5.0
+DATA_DIR = Path(__file__).parent / "data"
+DATA_FILE = DATA_DIR / "results.csv"
+SEASONS_FILE = DATA_DIR / "seasons.csv"
+TEAMS_FILE = DATA_DIR / "teams.csv"
 
 @st.cache_data
 def load_results():
     df = pd.read_csv(DATA_FILE)
     numeric = ["gameweek", "home_score", "away_score"]
     df[numeric] = df[numeric].apply(pd.to_numeric)
+    df["season"] = df["season"].astype(str)
     return df.sort_values(["season", "gameweek"]).reset_index(drop=True)
 
-def long_results(fixtures):
+@st.cache_data
+def load_season_settings():
+    settings = pd.read_csv(SEASONS_FILE, dtype={"season": str})
+    settings["draw_margin"] = pd.to_numeric(settings["draw_margin"])
+    return settings.set_index("season")["draw_margin"].to_dict()
+
+@st.cache_data
+def load_team_abbreviations():
+    teams = pd.read_csv(TEAMS_FILE)
+    if "abbreviation" not in teams.columns:
+        return {team: team for team in teams["team"]}
+    return {
+        row.team: row.abbreviation if pd.notna(row.abbreviation) and str(row.abbreviation).strip() else row.team
+        for row in teams.itertuples(index=False)
+    }
+
+def long_results(fixtures, draw_margin):
     home = fixtures.rename(columns={"home_team":"team","away_team":"opponent","home_score":"score","away_score":"opponent_score"})
     away = fixtures.rename(columns={"away_team":"team","home_team":"opponent","away_score":"score","home_score":"opponent_score"})
     cols=["season","gameweek","team","opponent","score","opponent_score"]
     games=pd.concat([home[cols],away[cols]],ignore_index=True)
     margin=games["score"]-games["opponent_score"]
-    games["result"]=np.select([margin>DRAW_MARGIN, margin<-DRAW_MARGIN],["W","L"],default="D")
+    games["result"]=np.select([margin>draw_margin, margin<-draw_margin],["W","L"],default="D")
     games["league_points"]=games["result"].map({"W":3,"D":1,"L":0})
     games["margin"]=margin
     return games.sort_values(["gameweek","team"]).reset_index(drop=True)
 
-def add_all_play(games):
+def add_all_play(games, draw_margin):
     records=[]
     for (season,gw), group in games.groupby(["season","gameweek"]):
         scores=group.set_index("team")["score"].to_dict()
@@ -36,7 +55,7 @@ def add_all_play(games):
             for other, other_score in scores.items():
                 if other==team: continue
                 diff=score-other_score
-                comparisons.append(3 if diff>DRAW_MARGIN else 0 if diff<-DRAW_MARGIN else 1)
+                comparisons.append(3 if diff>draw_margin else 0 if diff<-draw_margin else 1)
             expected=np.mean(comparisons)
             records.append({"season":season,"gameweek":gw,"team":team,"all_play_points":expected,
                             "all_play_wins":sum(x==3 for x in comparisons),"all_play_draws":sum(x==1 for x in comparisons),
@@ -59,7 +78,7 @@ def standings(games):
     table.insert(0,"Pos",range(1,len(table)+1))
     return table
 
-def fixture_record(games, score_team, fixture_team):
+def fixture_record(games, score_team, fixture_team, draw_margin):
     score_map=games.set_index(["gameweek","team"])["score"].to_dict()
     fixture_map=games.set_index(["gameweek","team"])["opponent"].to_dict()
     weeks=sorted(games.gameweek.unique())
@@ -72,17 +91,17 @@ def fixture_record(games, score_team, fixture_team):
         score=score_map[(gw,score_team)]
         opp_score=score_map[(gw,opp)]
         diff=score-opp_score
-        result="W" if diff>DRAW_MARGIN else "L" if diff<-DRAW_MARGIN else "D"
+        result="W" if diff>draw_margin else "L" if diff<-draw_margin else "D"
         rows.append({"gameweek":gw,"opponent":opp,"score":score,"opponent_score":opp_score,"result":result,
                      "points":{"W":3,"D":1,"L":0}[result],"margin":diff})
     return pd.DataFrame(rows)
 
-def swapped_fixture_standings(games, team_a, team_b):
+def swapped_fixture_standings(games, team_a, team_b, draw_margin):
     actual_table=standings(games)
     actual_positions=actual_table.set_index("team")["Pos"].to_dict()
 
-    rec_a=fixture_record(games,team_a,team_b)
-    rec_b=fixture_record(games,team_b,team_a)
+    rec_a=fixture_record(games,team_a,team_b,draw_margin)
+    rec_b=fixture_record(games,team_b,team_a,draw_margin)
     replacements={team_a:rec_a,team_b:rec_b}
 
     rows=[]
@@ -139,16 +158,23 @@ def record_rows(games):
     return pd.DataFrame(records)
 
 raw=load_results()
+season_settings=load_season_settings()
+team_abbreviations=load_team_abbreviations()
 seasons=sorted(raw.season.unique(),reverse=True)
 season=st.sidebar.selectbox("Season",seasons)
 season_raw=raw[raw.season==season]
+if season not in season_settings:
+    st.error(f"No draw margin has been configured for season {season}. Add it to data/seasons.csv.")
+    st.stop()
+draw_margin=float(season_settings[season])
 max_week=int(season_raw.gameweek.max())
 week_range=st.sidebar.slider("Gameweeks",1,max_week,(1,max_week))
 filtered_raw=season_raw[season_raw.gameweek.between(*week_range)]
-games=add_all_play(long_results(filtered_raw))
+games=add_all_play(long_results(filtered_raw, draw_margin), draw_margin)
 teams=sorted(games.team.unique())
 page=st.sidebar.radio("Page",["League overview","Team analysis","Fixture comparison","Season records","Methodology"])
-st.sidebar.caption(f"Draw margin: ±{DRAW_MARGIN:g} points. A win requires a margin greater than {DRAW_MARGIN:g}.")
+margin_text = "Only exact ties are draws" if draw_margin == 0 else f"Draw margin: ±{draw_margin:g} points"
+st.sidebar.caption(f"{margin_text}. A win requires a margin greater than {draw_margin:g}.")
 
 st.title("⚽ Cheesepionship Luck Tracker")
 st.caption(f"{season} · Gameweeks {week_range[0]}–{week_range[1]}")
@@ -157,10 +183,11 @@ if page=="League overview":
     table=standings(games)
     luckiest=table.loc[table.Schedule_Luck.idxmax()]; unluckiest=table.loc[table.Schedule_Luck.idxmin()]
     c1,c2,c3,c4=st.columns(4)
-    c1.metric("League leader",table.iloc[0].team,f"{table.iloc[0].Pts:.0f} pts")
-    c2.metric("Luckiest",luckiest.team,f"{luckiest.Schedule_Luck:+.2f} pts")
-    c3.metric("Unluckiest",unluckiest.team,f"{unluckiest.Schedule_Luck:+.2f} pts")
-    c4.metric("Highest scorer",table.loc[table.PF.idxmax()].team,f"{table.PF.max():.2f}")
+    c1.metric("League leader",team_abbreviations.get(table.iloc[0].team, table.iloc[0].team),f"{table.iloc[0].Pts:.0f} pts")
+    c2.metric("Luckiest",team_abbreviations.get(luckiest.team, luckiest.team),f"{luckiest.Schedule_Luck:+.2f} pts")
+    c3.metric("Unluckiest",team_abbreviations.get(unluckiest.team, unluckiest.team),f"{unluckiest.Schedule_Luck:+.2f} pts")
+    highest_scorer=table.loc[table.PF.idxmax()]
+    c4.metric("Highest scorer",team_abbreviations.get(highest_scorer.team, highest_scorer.team),f"{highest_scorer.PF:.2f}")
     st.subheader("Standings and schedule luck")
     show=table.rename(columns={"Expected_Pts":"Expected pts","Schedule_Luck":"Luck","Avg_Opp_Score":"Avg opponent","Avg_Weekly_Rank":"Avg weekly rank"})
     st.dataframe(show[["Pos","team","P","W","D","L","Pts","PF","PA","Diff","Expected pts","Luck","Avg opponent","Avg weekly rank"]],hide_index=True,use_container_width=True,
@@ -219,7 +246,7 @@ elif page=="Fixture comparison":
     if score_team==fixture_team:
         st.info("Select two different teams to compare their swapped fixture outcomes.")
     else:
-        rec_a,rec_b,actual_table,new_table,actual_positions,new_positions=swapped_fixture_standings(games,score_team,fixture_team)
+        rec_a,rec_b,actual_table,new_table,actual_positions,new_positions=swapped_fixture_standings(games,score_team,fixture_team,draw_margin)
         actual_lookup=actual_table.set_index("team")
 
         def summary_row(team, swapped_record):
@@ -304,13 +331,15 @@ elif page=="Season records":
     st.line_chart(weekly.set_index("gameweek"))
 
 else:
-    st.markdown("""
+    st.markdown(f"""
 ### How luck is measured
-For every gameweek, each team is hypothetically compared with all 11 other scores using the same league rule:
+For every gameweek, each team is hypothetically compared with all 11 other scores using the draw margin configured for the selected season.
 
-- win: score is **more than 5 points higher** — 3 points
-- draw: scores are **within 5 points inclusive** — 1 point
-- loss: score is **more than 5 points lower** — 0 points
+- win: score is higher by **more than the season's draw margin** — 3 points
+- draw: score difference is **within the season's draw margin, inclusive** — 1 point
+- loss: score is lower by **more than the season's draw margin** — 0 points
+
+The current season's draw margin is **{draw_margin:g}**. A margin of `0` means only an exact tie is a draw.
 
 The average points from those 11 hypothetical matchups is the team's **all-play expected points** for that week.
 

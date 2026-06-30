@@ -1,6 +1,6 @@
 # Cheesepionship Luck Tracker
 
-A Streamlit app for a 12-team Fantrax fantasy football league. It uses the league's five-point draw margin to calculate standings, all-play expected points, schedule luck, fixture comparisons and season records.
+A Streamlit app for a Fantrax fantasy football league. It calculates standings, all-play expected points, schedule luck, fixture comparisons and season records using the draw rule configured for each season.
 
 ## Run locally
 
@@ -9,30 +9,49 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
-## Update each gameweek
+## Add or update results
 
-Edit `data/results.csv` and add six rows in this format:
+Edit `data/results.csv`. Each fixture is one row:
 
 ```csv
 season,gameweek,home_team,home_score,away_team,away_score
 2025-26,39,Team A,101.25,Team B,94.00
 ```
 
-Commit and push the change to GitHub. Streamlit Community Cloud will reload the repository.
+A gameweek should contain one fixture for every pair of teams playing that week.
+
+## Configure each season's draw rule
+
+Edit `data/seasons.csv` and add one row for every season included in `results.csv`:
+
+```csv
+season,draw_margin
+2025-26,5
+2024-25,0
+```
+
+- `5` means scores within five points, inclusive, are draws. A win requires a margin greater than five.
+- `0` means only an exact tie is a draw. Any positive margin is a win.
+
+The app stops with a clear warning if results exist for a season that has not been added to `seasons.csv`.
+
+## Team abbreviations
+
+Homepage headline cards use abbreviations from `data/teams.csv`:
+
+```csv
+team,abbreviation
+Team Beige,BGE
+```
+
+Teams without a configured abbreviation fall back to their full name.
 
 ## Deploy
 
-1. Create a GitHub repository and upload every file in this folder.
+1. Upload every file in this folder to a GitHub repository.
 2. In Streamlit Community Cloud, choose **Create app**.
 3. Select the repository and branch.
 4. Set the main file path to `app.py`.
 5. Deploy.
 
-## Data rules
-
-- Each gameweek should contain six fixtures and all 12 teams exactly once.
-- A win requires a margin greater than five points.
-- A margin from -5 through +5 is a draw.
-- Team names must remain consistent across gameweeks.
-
-The included CSV was extracted from `Luck Tracker Template - Cheesepionship 25-26.xlsx`.
+Commit and push future CSV updates to GitHub. Streamlit Community Cloud will reload the repository.
