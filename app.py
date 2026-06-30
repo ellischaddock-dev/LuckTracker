@@ -67,12 +67,43 @@ def fixture_record(games, score_team, fixture_team):
     for gw in weeks:
         opp=fixture_map[(gw,fixture_team)]
         # When the fixture owner played the score owner, preserve that head-to-head pairing.
-        if opp==score_team: opp=fixture_team
-        score=score_map[(gw,score_team)]; opp_score=score_map[(gw,opp)]
-        diff=score-opp_score; result="W" if diff>DRAW_MARGIN else "L" if diff<-DRAW_MARGIN else "D"
+        if opp==score_team:
+            opp=fixture_team
+        score=score_map[(gw,score_team)]
+        opp_score=score_map[(gw,opp)]
+        diff=score-opp_score
+        result="W" if diff>DRAW_MARGIN else "L" if diff<-DRAW_MARGIN else "D"
         rows.append({"gameweek":gw,"opponent":opp,"score":score,"opponent_score":opp_score,"result":result,
-                     "points":{"W":3,"D":1,"L":0}[result]})
+                     "points":{"W":3,"D":1,"L":0}[result],"margin":diff})
     return pd.DataFrame(rows)
+
+def swapped_fixture_standings(games, team_a, team_b):
+    actual_table=standings(games)
+    actual_positions=actual_table.set_index("team")["Pos"].to_dict()
+
+    rec_a=fixture_record(games,team_a,team_b)
+    rec_b=fixture_record(games,team_b,team_a)
+    replacements={team_a:rec_a,team_b:rec_b}
+
+    rows=[]
+    for team, group in games.groupby("team"):
+        if team in replacements:
+            r=replacements[team]
+            rows.append({
+                "team":team,"P":len(r),"W":(r.result=="W").sum(),"D":(r.result=="D").sum(),
+                "L":(r.result=="L").sum(),"Pts":r.points.sum(),"PF":r.score.sum(),
+                "PA":r.opponent_score.sum(),"Diff":r.score.sum()-r.opponent_score.sum()
+            })
+        else:
+            rows.append({
+                "team":team,"P":len(group),"W":(group.result=="W").sum(),"D":(group.result=="D").sum(),
+                "L":(group.result=="L").sum(),"Pts":group.league_points.sum(),"PF":group.score.sum(),
+                "PA":group.opponent_score.sum(),"Diff":group.score.sum()-group.opponent_score.sum()
+            })
+    new_table=pd.DataFrame(rows).sort_values(["Pts","PF"],ascending=[False,False]).reset_index(drop=True)
+    new_table.insert(0,"Pos",range(1,len(new_table)+1))
+    new_positions=new_table.set_index("team")["Pos"].to_dict()
+    return rec_a,rec_b,actual_table,new_table,actual_positions,new_positions
 
 def longest_streak(results, accepted):
     best=0; current=0
@@ -180,17 +211,81 @@ elif page=="Team analysis":
     st.dataframe(detail,hide_index=True,use_container_width=True,column_config={"Luck":st.column_config.NumberColumn(format="%+.2f"),"Expected points":st.column_config.NumberColumn(format="%.2f")})
 
 elif page=="Fixture comparison":
-    st.write("Apply one team's weekly scores to another team's fixture list. Weeks where the two selected teams played each other retain that head-to-head pairing.")
+    st.write("Swap the two selected teams' fixture lists while keeping each team's own weekly scores. Weeks where they played each other remain unchanged.")
     c1,c2=st.columns(2)
     score_team=c1.selectbox("Use scores from",teams)
     fixture_team=c2.selectbox("Use fixtures from",teams,index=min(1,len(teams)-1))
-    comparison=fixture_record(games,score_team,fixture_team)
-    actual=fixture_record(games,score_team,score_team)
-    c1,c2,c3=st.columns(3)
-    c1.metric("Actual points",int(actual.points.sum()))
-    c2.metric("With selected fixtures",int(comparison.points.sum()))
-    c3.metric("Difference",f"{comparison.points.sum()-actual.points.sum():+.0f}")
-    st.dataframe(comparison,hide_index=True,use_container_width=True)
+
+    if score_team==fixture_team:
+        st.info("Select two different teams to compare their swapped fixture outcomes.")
+    else:
+        rec_a,rec_b,actual_table,new_table,actual_positions,new_positions=swapped_fixture_standings(games,score_team,fixture_team)
+        actual_lookup=actual_table.set_index("team")
+
+        def summary_row(team, swapped_record):
+            actual=actual_lookup.loc[team]
+            new_pos=int(new_positions[team])
+            old_pos=int(actual_positions[team])
+            return {
+                "Team":team,
+                "Actual position":old_pos,
+                "New position":new_pos,
+                "Position change":old_pos-new_pos,
+                "Actual points":int(actual.Pts),
+                "New points":int(swapped_record.points.sum()),
+                "Points change":int(swapped_record.points.sum()-actual.Pts),
+                "W":int((swapped_record.result=="W").sum()),
+                "D":int((swapped_record.result=="D").sum()),
+                "L":int((swapped_record.result=="L").sum()),
+                "PF":float(swapped_record.score.sum()),
+                "PA":float(swapped_record.opponent_score.sum()),
+                "Diff":float(swapped_record.score.sum()-swapped_record.opponent_score.sum()),
+            }
+
+        summary=pd.DataFrame([summary_row(score_team,rec_a),summary_row(fixture_team,rec_b)])
+        st.subheader("Results after swapping fixtures")
+        st.dataframe(
+            summary,
+            hide_index=True,
+            use_container_width=True,
+            column_config={
+                "Position change":st.column_config.NumberColumn(help="Positive means the team moves up the table.",format="%+d"),
+                "Points change":st.column_config.NumberColumn(format="%+d"),
+                "PF":st.column_config.NumberColumn(format="%.2f"),
+                "PA":st.column_config.NumberColumn(format="%.2f"),
+                "Diff":st.column_config.NumberColumn(format="%+.2f"),
+            },
+        )
+
+        left,right=st.columns(2)
+        for container,team,record,borrowed_from in [
+            (left,score_team,rec_a,fixture_team),
+            (right,fixture_team,rec_b,score_team),
+        ]:
+            with container:
+                st.subheader(team)
+                old_pos=int(actual_positions[team]); new_pos=int(new_positions[team])
+                actual_pts=int(actual_lookup.loc[team,"Pts"]); new_pts=int(record.points.sum())
+                m1,m2,m3=st.columns(3)
+                m1.metric("League position",new_pos,f"{old_pos-new_pos:+d} places")
+                m2.metric("League points",new_pts,f"{new_pts-actual_pts:+d}")
+                m3.metric("Record",f"{(record.result=='W').sum()}-{(record.result=='D').sum()}-{(record.result=='L').sum()}")
+                detail=record.rename(columns={
+                    "gameweek":"GW","opponent":"Opponent","score":"Score","opponent_score":"Opponent score",
+                    "result":"Result","points":"Points","margin":"Margin"
+                })
+                st.caption(f"Using {borrowed_from}'s fixtures")
+                st.dataframe(detail[["GW","Opponent","Score","Opponent score","Result","Points","Margin"]],hide_index=True,use_container_width=True)
+
+        st.subheader("Revised league table")
+        revised=new_table.copy()
+        revised["Change"]=revised.apply(lambda r: actual_positions[r.team]-r.Pos,axis=1)
+        st.dataframe(
+            revised[["Pos","Change","team","P","W","D","L","Pts","PF","PA","Diff"]],
+            hide_index=True,
+            use_container_width=True,
+            column_config={"Change":st.column_config.NumberColumn(format="%+d"),"PF":st.column_config.NumberColumn(format="%.2f"),"PA":st.column_config.NumberColumn(format="%.2f"),"Diff":st.column_config.NumberColumn(format="%+.2f")},
+        )
 
 elif page=="Season records":
     st.subheader("Records for selected gameweeks")
