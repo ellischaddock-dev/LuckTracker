@@ -11,7 +11,7 @@ SEASONS_FILE = DATA_DIR / "seasons.csv"
 TEAMS_FILE = DATA_DIR / "teams.csv"
 
 @st.cache_data
-def load_results():
+def load_results(file_version):
     df = pd.read_csv(DATA_FILE)
     numeric = ["gameweek", "home_score", "away_score"]
     df[numeric] = df[numeric].apply(pd.to_numeric)
@@ -19,13 +19,13 @@ def load_results():
     return df.sort_values(["season", "gameweek"]).reset_index(drop=True)
 
 @st.cache_data
-def load_season_settings():
+def load_season_settings(file_version):
     settings = pd.read_csv(SEASONS_FILE, dtype={"season": str})
     settings["draw_margin"] = pd.to_numeric(settings["draw_margin"])
     return settings.set_index("season")["draw_margin"].to_dict()
 
 @st.cache_data
-def load_team_abbreviations():
+def load_team_abbreviations(file_version):
     teams = pd.read_csv(TEAMS_FILE)
     if "abbreviation" not in teams.columns:
         return {team: team for team in teams["team"]}
@@ -157,9 +157,9 @@ def record_rows(games):
         length,team=max(vals); add(label,team,str(length))
     return pd.DataFrame(records)
 
-raw=load_results()
-season_settings=load_season_settings()
-team_abbreviations=load_team_abbreviations()
+raw=load_results(DATA_FILE.stat().st_mtime_ns)
+season_settings=load_season_settings(SEASONS_FILE.stat().st_mtime_ns)
+team_abbreviations=load_team_abbreviations(TEAMS_FILE.stat().st_mtime_ns)
 seasons=sorted(raw.season.unique(),reverse=True)
 season=st.sidebar.selectbox("Season",seasons)
 season_raw=raw[raw.season==season]
@@ -333,7 +333,7 @@ elif page=="Season records":
 else:
     st.markdown(f"""
 ### How luck is measured
-For every gameweek, each team is hypothetically compared with all 11 other scores using the draw margin configured for the selected season.
+For every gameweek, each team is hypothetically compared with every other team in that season using the configured draw margin.
 
 - win: score is higher by **more than the season's draw margin** — 3 points
 - draw: score difference is **within the season's draw margin, inclusive** — 1 point
