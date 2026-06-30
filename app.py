@@ -172,6 +172,7 @@ week_range=st.sidebar.slider("Gameweeks",1,max_week,(1,max_week))
 filtered_raw=season_raw[season_raw.gameweek.between(*week_range)]
 games=add_all_play(long_results(filtered_raw, draw_margin), draw_margin)
 teams=sorted(games.team.unique())
+selected_team=st.sidebar.selectbox("Team", teams, key="global_team")
 page=st.sidebar.radio("Page",["League overview","Team analysis","Fixture comparison","Season records","Methodology"])
 margin_text = "Only exact ties are draws" if draw_margin == 0 else f"Draw margin: ±{draw_margin:g} points"
 st.sidebar.caption(f"{margin_text}. A win requires a margin greater than {draw_margin:g}.")
@@ -221,7 +222,8 @@ if page=="League overview":
     st.altair_chart(comparison_chart, use_container_width=True)
 
 elif page=="Team analysis":
-    team=st.selectbox("Team",teams)
+    team=selected_team
+    st.subheader(team)
     tg=games[games.team==team].sort_values("gameweek")
     total=tg.league_points.sum(); expected=tg.all_play_points.sum(); luck=total-expected
     c1,c2,c3,c4=st.columns(4)
@@ -237,11 +239,39 @@ elif page=="Team analysis":
     st.subheader("Weekly detail")
     st.dataframe(detail,hide_index=True,use_container_width=True,column_config={"Luck":st.column_config.NumberColumn(format="%+.2f"),"Expected points":st.column_config.NumberColumn(format="%.2f")})
 
+    st.subheader("Record against each opponent")
+    opponent_record=(
+        tg.groupby("opponent", as_index=False)
+        .agg(
+            P=("gameweek","count"),
+            W=("result",lambda s:(s=="W").sum()),
+            D=("result",lambda s:(s=="D").sum()),
+            L=("result",lambda s:(s=="L").sum()),
+            Pts=("league_points","sum"),
+            PF=("score","sum"),
+            PA=("opponent_score","sum"),
+        )
+        .rename(columns={"opponent":"Opponent"})
+    )
+    opponent_record["Diff"]=opponent_record["PF"]-opponent_record["PA"]
+    opponent_record=opponent_record.sort_values(["Pts","Diff","PF"],ascending=[False,False,False]).reset_index(drop=True)
+    st.dataframe(
+        opponent_record[["Opponent","P","W","D","L","Pts","PF","PA","Diff"]],
+        hide_index=True,
+        use_container_width=True,
+        column_config={
+            "PF":st.column_config.NumberColumn(format="%.2f"),
+            "PA":st.column_config.NumberColumn(format="%.2f"),
+            "Diff":st.column_config.NumberColumn(format="%+.2f"),
+        },
+    )
+
 elif page=="Fixture comparison":
     st.write("Swap the two selected teams' fixture lists while keeping each team's own weekly scores. Weeks where they played each other remain unchanged.")
-    c1,c2=st.columns(2)
-    score_team=c1.selectbox("Use scores from",teams)
-    fixture_team=c2.selectbox("Use fixtures from",teams,index=min(1,len(teams)-1))
+    score_team=selected_team
+    st.caption(f"Using scores from **{score_team}**, selected in the sidebar.")
+    fixture_options=[team for team in teams if team != score_team]
+    fixture_team=st.selectbox("Use fixtures from",fixture_options)
 
     if score_team==fixture_team:
         st.info("Select two different teams to compare their swapped fixture outcomes.")
@@ -341,7 +371,7 @@ For every gameweek, each team is hypothetically compared with every other team i
 
 The current season's draw margin is **{draw_margin:g}**. A margin of `0` means only an exact tie is a draw.
 
-The average points from those 11 hypothetical matchups is the team's **all-play expected points** for that week.
+The average points from those hypothetical matchups is the team's **all-play expected points** for that week.
 
 **Schedule luck = actual league points − all-play expected points.**
 
