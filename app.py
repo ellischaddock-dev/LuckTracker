@@ -2,6 +2,7 @@ from pathlib import Path
 import pandas as pd
 import numpy as np
 import streamlit as st
+import altair as alt
 
 st.set_page_config(page_title="Cheesepionship Luck Tracker", page_icon="⚽", layout="wide")
 DATA_FILE = Path(__file__).parent / "data" / "results.csv"
@@ -133,9 +134,33 @@ if page=="League overview":
     show=table.rename(columns={"Expected_Pts":"Expected pts","Schedule_Luck":"Luck","Avg_Opp_Score":"Avg opponent","Avg_Weekly_Rank":"Avg weekly rank"})
     st.dataframe(show[["Pos","team","P","W","D","L","Pts","PF","PA","Diff","Expected pts","Luck","Avg opponent","Avg weekly rank"]],hide_index=True,use_container_width=True,
         column_config={"Luck":st.column_config.NumberColumn(format="%+.2f"),"Expected pts":st.column_config.NumberColumn(format="%.2f"),"PF":st.column_config.NumberColumn(format="%.2f"),"PA":st.column_config.NumberColumn(format="%.2f")})
-    chart=table.set_index("team")[["Pts","Expected_Pts"]].sort_values("Pts")
+    chart = table[["team", "Pts", "Expected_Pts"]].rename(
+        columns={"Pts": "Actual points", "Expected_Pts": "Expected points"}
+    )
+    chart = chart.melt(
+        id_vars="team",
+        var_name="Point type",
+        value_name="Points",
+    )
+    team_order = table.sort_values("Pts", ascending=False)["team"].tolist()
     st.subheader("Actual versus all-play expected points")
-    st.bar_chart(chart,horizontal=True)
+    comparison_chart = (
+        alt.Chart(chart)
+        .mark_bar()
+        .encode(
+            y=alt.Y("team:N", sort=team_order, title=None),
+            x=alt.X("Points:Q", title="League points"),
+            yOffset=alt.YOffset("Point type:N"),
+            color=alt.Color("Point type:N", title=None),
+            tooltip=[
+                alt.Tooltip("team:N", title="Team"),
+                alt.Tooltip("Point type:N"),
+                alt.Tooltip("Points:Q", format=".2f"),
+            ],
+        )
+        .properties(height=max(360, len(table) * 34))
+    )
+    st.altair_chart(comparison_chart, use_container_width=True)
 
 elif page=="Team analysis":
     team=st.selectbox("Team",teams)
@@ -166,19 +191,20 @@ elif page=="Fixture comparison":
     c2.metric("With selected fixtures",int(comparison.points.sum()))
     c3.metric("Difference",f"{comparison.points.sum()-actual.points.sum():+.0f}")
     st.dataframe(comparison,hide_index=True,use_container_width=True)
-    st.subheader("Full fixture matrix")
-    matrix=pd.DataFrame(index=teams,columns=teams,dtype=float)
-    for score_owner in teams:
-        for fixture_owner in teams:
-            matrix.loc[score_owner,fixture_owner]=fixture_record(games,score_owner,fixture_owner).points.sum()
-    matrix.index.name="Scores from ↓ / Fixtures from →"
-    st.dataframe(matrix.style.background_gradient(axis=None),use_container_width=True)
 
 elif page=="Season records":
     st.subheader("Records for selected gameweeks")
     st.dataframe(record_rows(games),hide_index=True,use_container_width=True)
-    weekly=games.groupby("gameweek").agg(total_score=("score","sum"),average_score=("score","mean")).reset_index()
-    # games has two rows per match, but each team score only once, so totals are correct.
+    weekly = games.groupby("gameweek").agg(
+        highest_score=("score", "max"),
+        average_score=("score", "mean"),
+        lowest_score=("score", "min"),
+    ).reset_index()
+    weekly = weekly.rename(columns={
+        "highest_score": "Highest score",
+        "average_score": "Average score",
+        "lowest_score": "Lowest score",
+    })
     st.subheader("Scoring by gameweek")
     st.line_chart(weekly.set_index("gameweek"))
 
