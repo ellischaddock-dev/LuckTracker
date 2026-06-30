@@ -1,229 +1,1592 @@
-season,gameweek,home_team,home_score,away_team,away_score
-2025-26,1,Kante Kepa Clean Sheet,68.75,Rainham Steel Select XI,83.75
-2025-26,1,AFC Pleasures,129.5,The Cobras,66.5
-2025-26,1,THE MIKES TINY PENISES,99.5,Rapid Viennetta,153.5
+﻿season,gameweek,home_team,home_score,away_team,away_score
+2018-19,1,Kante Kepa Clean Sheet,90.75,The Cobras,118.75
+2018-19,1,Pun on a Footballers Name,140.25,Team Beige,92.0
+2018-19,1,Rainham Steel Select XI,124.75,AFC Pleasures,88.0
+2018-19,1,THE MIKES TINY PENISES,141.0,#WinOrLose,100.75
+2018-19,2,#WinOrLose,108.75,The Cobras,121.0
+2018-19,2,AFC Pleasures,176.0,Kante Kepa Clean Sheet,52.25
+2018-19,2,Pun on a Footballers Name,85.25,THE MIKES TINY PENISES,153.75
+2018-19,2,Team Beige,101.75,Rainham Steel Select XI,104.0
+2018-19,3,#WinOrLose,101.75,AFC Pleasures,134.0
+2018-19,3,Kante Kepa Clean Sheet,111.25,Rainham Steel Select XI,74.5
+2018-19,3,THE MIKES TINY PENISES,76.0,Team Beige,90.25
+2018-19,3,The Cobras,96.75,Pun on a Footballers Name,131.0
+2018-19,4,Pun on a Footballers Name,106.0,AFC Pleasures,49.0
+2018-19,4,Rainham Steel Select XI,79.5,#WinOrLose,122.75
+2018-19,4,THE MIKES TINY PENISES,118.75,The Cobras,62.0
+2018-19,4,Team Beige,98.5,Kante Kepa Clean Sheet,120.25
+2018-19,5,#WinOrLose,151.0,Kante Kepa Clean Sheet,88.75
+2018-19,5,AFC Pleasures,95.0,THE MIKES TINY PENISES,71.0
+2018-19,5,Pun on a Footballers Name,83.75,Rainham Steel Select XI,84.25
+2018-19,5,The Cobras,67.0,Team Beige,156.0
+2018-19,6,Kante Kepa Clean Sheet,119.75,Pun on a Footballers Name,102.25
+2018-19,6,THE MIKES TINY PENISES,101.5,Rainham Steel Select XI,107.75
+2018-19,6,Team Beige,118.25,#WinOrLose,113.25
+2018-19,6,The Cobras,70.25,AFC Pleasures,108.25
+2018-19,7,AFC Pleasures,101.0,Team Beige,112.75
+2018-19,7,Pun on a Footballers Name,67.5,#WinOrLose,116.75
+2018-19,7,Rainham Steel Select XI,107.25,The Cobras,131.25
+2018-19,7,THE MIKES TINY PENISES,120.75,Kante Kepa Clean Sheet,55.0
+2018-19,8,#WinOrLose,101.5,THE MIKES TINY PENISES,107.0
+2018-19,8,AFC Pleasures,93.25,Rainham Steel Select XI,94.75
+2018-19,8,Team Beige,64.5,Pun on a Footballers Name,95.0
+2018-19,8,The Cobras,89.0,Kante Kepa Clean Sheet,122.25
+2018-19,9,Kante Kepa Clean Sheet,122.0,AFC Pleasures,122.75
+2018-19,9,Rainham Steel Select XI,99.5,Team Beige,53.25
+2018-19,9,THE MIKES TINY PENISES,69.25,Pun on a Footballers Name,87.0
+2018-19,9,The Cobras,90.0,#WinOrLose,106.75
+2018-19,10,AFC Pleasures,113.5,#WinOrLose,110.0
+2018-19,10,Pun on a Footballers Name,117.0,The Cobras,78.75
+2018-19,10,Rainham Steel Select XI,96.25,Kante Kepa Clean Sheet,111.75
+2018-19,10,Team Beige,78.75,THE MIKES TINY PENISES,85.5
+2018-19,11,#WinOrLose,98.25,Rainham Steel Select XI,103.5
+2018-19,11,AFC Pleasures,94.5,Pun on a Footballers Name,74.25
+2018-19,11,Kante Kepa Clean Sheet,51.75,Team Beige,134.0
+2018-19,11,The Cobras,78.75,THE MIKES TINY PENISES,154.0
+2018-19,12,Kante Kepa Clean Sheet,85.5,#WinOrLose,98.25
+2018-19,12,Rainham Steel Select XI,79.5,Pun on a Footballers Name,74.25
+2018-19,12,THE MIKES TINY PENISES,86.0,AFC Pleasures,128.5
+2018-19,12,Team Beige,110.5,The Cobras,92.25
+2018-19,13,#WinOrLose,86.5,Team Beige,97.5
+2018-19,13,AFC Pleasures,114.5,The Cobras,116.0
+2018-19,13,Pun on a Footballers Name,123.5,Kante Kepa Clean Sheet,105.75
+2018-19,13,Rainham Steel Select XI,107.5,THE MIKES TINY PENISES,69.25
+2018-19,14,#WinOrLose,107.0,Pun on a Footballers Name,99.5
+2018-19,14,Kante Kepa Clean Sheet,158.0,THE MIKES TINY PENISES,111.5
+2018-19,14,Team Beige,72.75,AFC Pleasures,108.75
+2018-19,14,The Cobras,63.5,Rainham Steel Select XI,96.0
+2018-19,15,Kante Kepa Clean Sheet,107.75,The Cobras,96.0
+2018-19,15,Pun on a Footballers Name,159.75,Team Beige,48.5
+2018-19,15,Rainham Steel Select XI,115.5,AFC Pleasures,64.25
+2018-19,15,THE MIKES TINY PENISES,127.75,#WinOrLose,63.25
+2018-19,16,#WinOrLose,80.75,The Cobras,82.5
+2018-19,16,AFC Pleasures,129.5,Kante Kepa Clean Sheet,151.25
+2018-19,16,Pun on a Footballers Name,44.0,THE MIKES TINY PENISES,140.75
+2018-19,16,Team Beige,87.25,Rainham Steel Select XI,92.75
+2018-19,17,#WinOrLose,74.25,AFC Pleasures,71.25
+2018-19,17,Kante Kepa Clean Sheet,83.5,Rainham Steel Select XI,113.25
+2018-19,17,THE MIKES TINY PENISES,71.25,Team Beige,54.5
+2018-19,17,The Cobras,82.25,Pun on a Footballers Name,113.5
+2018-19,18,Pun on a Footballers Name,100.5,AFC Pleasures,124.0
+2018-19,18,Rainham Steel Select XI,95.5,#WinOrLose,91.0
+2018-19,18,THE MIKES TINY PENISES,85.25,The Cobras,115.5
+2018-19,18,Team Beige,48.5,Kante Kepa Clean Sheet,111.0
+2018-19,19,#WinOrLose,67.0,Kante Kepa Clean Sheet,156.25
+2018-19,19,AFC Pleasures,161.5,THE MIKES TINY PENISES,55.75
+2018-19,19,Pun on a Footballers Name,143.75,Rainham Steel Select XI,133.0
+2018-19,19,The Cobras,123.25,Team Beige,86.25
+2018-19,20,Kante Kepa Clean Sheet,101.5,Pun on a Footballers Name,45.75
+2018-19,20,THE MIKES TINY PENISES,106.0,Rainham Steel Select XI,111.5
+2018-19,20,Team Beige,97.5,#WinOrLose,28.5
+2018-19,20,The Cobras,73.75,AFC Pleasures,101.25
+2018-19,21,AFC Pleasures,117.0,Team Beige,115.75
+2018-19,21,Pun on a Footballers Name,107.5,#WinOrLose,77.75
+2018-19,21,Rainham Steel Select XI,110.0,The Cobras,116.5
+2018-19,21,THE MIKES TINY PENISES,42.0,Kante Kepa Clean Sheet,127.75
+2018-19,22,#WinOrLose,107.25,THE MIKES TINY PENISES,91.75
+2018-19,22,AFC Pleasures,92.5,Rainham Steel Select XI,110.5
+2018-19,22,Team Beige,130.75,Pun on a Footballers Name,101.0
+2018-19,22,The Cobras,97.5,Kante Kepa Clean Sheet,94.75
+2018-19,23,Kante Kepa Clean Sheet,60.25,AFC Pleasures,95.0
+2018-19,23,Rainham Steel Select XI,103.0,Team Beige,83.75
+2018-19,23,THE MIKES TINY PENISES,91.75,Pun on a Footballers Name,70.0
+2018-19,23,The Cobras,99.75,#WinOrLose,109.5
+2018-19,24,AFC Pleasures,77.5,#WinOrLose,53.5
+2018-19,24,Pun on a Footballers Name,93.0,The Cobras,67.75
+2018-19,24,Rainham Steel Select XI,113.25,Kante Kepa Clean Sheet,48.0
+2018-19,24,Team Beige,84.5,THE MIKES TINY PENISES,132.5
+2018-19,25,#WinOrLose,137.75,Rainham Steel Select XI,116.0
+2018-19,25,AFC Pleasures,85.0,Pun on a Footballers Name,114.25
+2018-19,25,Kante Kepa Clean Sheet,125.25,Team Beige,138.75
+2018-19,25,The Cobras,101.75,THE MIKES TINY PENISES,128.75
+2018-19,26,Kante Kepa Clean Sheet,88.75,#WinOrLose,143.0
+2018-19,26,Rainham Steel Select XI,152.5,Pun on a Footballers Name,116.5
+2018-19,26,THE MIKES TINY PENISES,113.0,AFC Pleasures,115.25
+2018-19,26,Team Beige,182.75,The Cobras,102.25
+2018-19,27,#WinOrLose,134.25,Team Beige,41.0
+2018-19,27,AFC Pleasures,81.25,The Cobras,145.25
+2018-19,27,Pun on a Footballers Name,98.5,Kante Kepa Clean Sheet,63.0
+2018-19,27,Rainham Steel Select XI,71.5,THE MIKES TINY PENISES,103.75
+2018-19,28,#WinOrLose,118.0,Pun on a Footballers Name,141.0
+2018-19,28,Kante Kepa Clean Sheet,106.25,THE MIKES TINY PENISES,91.5
+2018-19,28,Team Beige,86.0,AFC Pleasures,152.25
+2018-19,28,The Cobras,48.25,Rainham Steel Select XI,153.25
+2018-19,29,Kante Kepa Clean Sheet,81.75,The Cobras,62.5
+2018-19,29,Pun on a Footballers Name,95.0,Team Beige,85.75
+2018-19,29,Rainham Steel Select XI,98.25,AFC Pleasures,118.5
+2018-19,29,THE MIKES TINY PENISES,103.5,#WinOrLose,97.75
+2018-19,30,#WinOrLose,56.25,The Cobras,69.5
+2018-19,30,AFC Pleasures,76.0,Kante Kepa Clean Sheet,86.75
+2018-19,30,Pun on a Footballers Name,70.5,THE MIKES TINY PENISES,107.75
+2018-19,30,Team Beige,98.5,Rainham Steel Select XI,106.0
+2018-19,31,#WinOrLose,46.75,AFC Pleasures,59.75
+2018-19,31,Kante Kepa Clean Sheet,84.0,Rainham Steel Select XI,84.5
+2018-19,31,THE MIKES TINY PENISES,89.5,Team Beige,61.0
+2018-19,31,The Cobras,43.0,Pun on a Footballers Name,32.0
+2018-19,32,Pun on a Footballers Name,115.0,AFC Pleasures,125.75
+2018-19,32,Rainham Steel Select XI,88.75,#WinOrLose,110.0
+2018-19,32,THE MIKES TINY PENISES,100.0,The Cobras,67.75
+2018-19,32,Team Beige,119.75,Kante Kepa Clean Sheet,116.5
+2018-19,33,#WinOrLose,145.0,Kante Kepa Clean Sheet,139.0
+2018-19,33,AFC Pleasures,110.25,THE MIKES TINY PENISES,102.5
+2018-19,33,Pun on a Footballers Name,114.0,Rainham Steel Select XI,175.75
+2018-19,33,The Cobras,97.75,Team Beige,81.5
+2018-19,34,Kante Kepa Clean Sheet,110.75,Pun on a Footballers Name,111.5
+2018-19,34,THE MIKES TINY PENISES,43.25,Rainham Steel Select XI,151.5
+2018-19,34,Team Beige,125.75,#WinOrLose,96.75
+2018-19,34,The Cobras,105.5,AFC Pleasures,156.5
+2018-19,35,AFC Pleasures,99.75,Team Beige,142.0
+2018-19,35,Pun on a Footballers Name,81.75,#WinOrLose,118.25
+2018-19,35,Rainham Steel Select XI,155.0,The Cobras,150.5
+2018-19,35,THE MIKES TINY PENISES,127.75,Kante Kepa Clean Sheet,105.25
+2018-19,36,#WinOrLose,191.75,THE MIKES TINY PENISES,165.25
+2018-19,36,AFC Pleasures,108.25,Rainham Steel Select XI,224.5
+2018-19,36,Team Beige,156.25,Pun on a Footballers Name,189.0
+2018-19,36,The Cobras,137.0,Kante Kepa Clean Sheet,93.25
+2018-19,37,Kante Kepa Clean Sheet,95.25,AFC Pleasures,131.75
+2018-19,37,Rainham Steel Select XI,98.75,Team Beige,127.5
+2018-19,37,THE MIKES TINY PENISES,90.5,Pun on a Footballers Name,73.25
+2018-19,37,The Cobras,120.5,#WinOrLose,48.5
+2018-19,38,AFC Pleasures,149.25,#WinOrLose,85.5
+2018-19,38,Pun on a Footballers Name,115.5,The Cobras,117.75
+2018-19,38,Rainham Steel Select XI,71.5,Kante Kepa Clean Sheet,171.25
+2018-19,38,Team Beige,123.25,THE MIKES TINY PENISES,98.75
+2019-20,1,#WinOrLose,144.5,Rainham Steel Select XI,104.25
+2019-20,1,AFC Pleasures,126.5,Kante Kepa Clean Sheet,134.75
+2019-20,1,Pun on a Footballers Name,125.5,THE MIKES TINY PENISES,68.5
+2019-20,1,The Cobras,114.25,Kane and Owl Albion,90.75
+2019-20,1,UFOE FC,65.25,Team Beige,56.75
+2019-20,2,Kane and Owl Albion,97.25,THE MIKES TINY PENISES,160.5
+2019-20,2,Kante Kepa Clean Sheet,48.75,The Cobras,153.5
+2019-20,2,Rainham Steel Select XI,92.0,Pun on a Footballers Name,64.0
+2019-20,2,Team Beige,67.75,AFC Pleasures,81.0
+2019-20,2,UFOE FC,66.25,#WinOrLose,88.0
+2019-20,3,#WinOrLose,97.25,Team Beige,63.25
+2019-20,3,Kane and Owl Albion,92.0,Rainham Steel Select XI,96.5
+2019-20,3,Pun on a Footballers Name,104.25,UFOE FC,75.25
+2019-20,3,THE MIKES TINY PENISES,118.75,Kante Kepa Clean Sheet,39.25
+2019-20,3,The Cobras,90.75,AFC Pleasures,87.25
+2019-20,4,#WinOrLose,110.25,Pun on a Footballers Name,149.25
+2019-20,4,AFC Pleasures,122.75,THE MIKES TINY PENISES,154.0
+2019-20,4,Kante Kepa Clean Sheet,94.5,Rainham Steel Select XI,86.5
+2019-20,4,Team Beige,68.25,The Cobras,60.5
+2019-20,4,UFOE FC,108.5,Kane and Owl Albion,80.75
+2019-20,5,Kane and Owl Albion,108.25,#WinOrLose,115.0
+2019-20,5,Kante Kepa Clean Sheet,71.75,UFOE FC,30.25
+2019-20,5,Pun on a Footballers Name,103.0,Team Beige,80.75
+2019-20,5,Rainham Steel Select XI,134.0,AFC Pleasures,109.5
+2019-20,5,THE MIKES TINY PENISES,109.75,The Cobras,126.75
+2019-20,6,#WinOrLose,109.75,Kante Kepa Clean Sheet,74.0
+2019-20,6,AFC Pleasures,144.0,UFOE FC,103.25
+2019-20,6,Pun on a Footballers Name,117.25,Kane and Owl Albion,66.25
+2019-20,6,Team Beige,68.0,THE MIKES TINY PENISES,118.5
+2019-20,6,The Cobras,48.0,Rainham Steel Select XI,83.0
+2019-20,7,AFC Pleasures,92.25,#WinOrLose,95.25
+2019-20,7,Kane and Owl Albion,81.75,Team Beige,91.5
+2019-20,7,Kante Kepa Clean Sheet,120.5,Pun on a Footballers Name,88.0
+2019-20,7,Rainham Steel Select XI,133.5,THE MIKES TINY PENISES,124.5
+2019-20,7,UFOE FC,86.75,The Cobras,73.75
+2019-20,8,Kane and Owl Albion,79.0,Kante Kepa Clean Sheet,42.5
+2019-20,8,Pun on a Footballers Name,59.75,AFC Pleasures,102.25
+2019-20,8,THE MIKES TINY PENISES,61.25,UFOE FC,104.25
+2019-20,8,Team Beige,131.75,Rainham Steel Select XI,92.5
+2019-20,8,The Cobras,93.25,#WinOrLose,49.25
+2019-20,9,#WinOrLose,163.5,THE MIKES TINY PENISES,115.0
+2019-20,9,AFC Pleasures,91.5,Kane and Owl Albion,70.75
+2019-20,9,Kante Kepa Clean Sheet,66.5,Team Beige,91.25
+2019-20,9,The Cobras,47.25,Pun on a Footballers Name,97.25
+2019-20,9,UFOE FC,79.0,Rainham Steel Select XI,156.75
+2019-20,10,Kane and Owl Albion,81.0,The Cobras,104.5
+2019-20,10,Kante Kepa Clean Sheet,121.75,AFC Pleasures,74.0
+2019-20,10,Rainham Steel Select XI,131.0,#WinOrLose,207.25
+2019-20,10,THE MIKES TINY PENISES,71.75,Pun on a Footballers Name,120.0
+2019-20,10,Team Beige,56.5,UFOE FC,95.25
+2019-20,11,#WinOrLose,101.75,UFOE FC,47.5
+2019-20,11,AFC Pleasures,99.25,Team Beige,117.25
+2019-20,11,Pun on a Footballers Name,71.5,Rainham Steel Select XI,121.5
+2019-20,11,THE MIKES TINY PENISES,77.75,Kane and Owl Albion,128.75
+2019-20,11,The Cobras,88.5,Kante Kepa Clean Sheet,86.75
+2019-20,12,AFC Pleasures,96.5,The Cobras,99.25
+2019-20,12,Kante Kepa Clean Sheet,79.5,THE MIKES TINY PENISES,74.0
+2019-20,12,Rainham Steel Select XI,107.25,Kane and Owl Albion,86.5
+2019-20,12,Team Beige,138.25,#WinOrLose,143.75
+2019-20,12,UFOE FC,73.75,Pun on a Footballers Name,83.25
+2019-20,13,Kane and Owl Albion,127.25,UFOE FC,118.5
+2019-20,13,Pun on a Footballers Name,92.25,#WinOrLose,83.75
+2019-20,13,Rainham Steel Select XI,111.75,Kante Kepa Clean Sheet,105.5
+2019-20,13,THE MIKES TINY PENISES,87.75,AFC Pleasures,114.75
+2019-20,13,The Cobras,115.75,Team Beige,93.0
+2019-20,14,#WinOrLose,105.5,Kane and Owl Albion,96.75
+2019-20,14,AFC Pleasures,100.5,Rainham Steel Select XI,91.0
+2019-20,14,Team Beige,104.0,Pun on a Footballers Name,78.75
+2019-20,14,The Cobras,80.5,THE MIKES TINY PENISES,78.0
+2019-20,14,UFOE FC,69.5,Kante Kepa Clean Sheet,84.75
+2019-20,15,Kane and Owl Albion,65.5,Pun on a Footballers Name,84.0
+2019-20,15,Kante Kepa Clean Sheet,125.75,#WinOrLose,99.0
+2019-20,15,Rainham Steel Select XI,131.0,The Cobras,115.0
+2019-20,15,THE MIKES TINY PENISES,106.75,Team Beige,73.75
+2019-20,15,UFOE FC,87.5,AFC Pleasures,78.0
+2019-20,16,#WinOrLose,96.5,AFC Pleasures,104.0
+2019-20,16,Pun on a Footballers Name,91.25,Kante Kepa Clean Sheet,129.0
+2019-20,16,THE MIKES TINY PENISES,68.0,Rainham Steel Select XI,159.0
+2019-20,16,Team Beige,73.25,Kane and Owl Albion,101.25
+2019-20,16,The Cobras,48.25,UFOE FC,116.25
+2019-20,17,#WinOrLose,84.75,The Cobras,98.75
+2019-20,17,AFC Pleasures,100.25,Pun on a Footballers Name,55.25
+2019-20,17,Kante Kepa Clean Sheet,116.75,Kane and Owl Albion,135.5
+2019-20,17,Rainham Steel Select XI,126.0,Team Beige,93.0
+2019-20,17,UFOE FC,102.25,THE MIKES TINY PENISES,108.5
+2019-20,18,Kane and Owl Albion,68.25,AFC Pleasures,109.75
+2019-20,18,Pun on a Footballers Name,79.25,The Cobras,71.5
+2019-20,18,Rainham Steel Select XI,63.0,UFOE FC,117.0
+2019-20,18,THE MIKES TINY PENISES,83.25,#WinOrLose,73.0
+2019-20,18,Team Beige,93.75,Kante Kepa Clean Sheet,63.25
+2019-20,19,#WinOrLose,67.25,Rainham Steel Select XI,79.0
+2019-20,19,AFC Pleasures,55.75,Kante Kepa Clean Sheet,96.75
+2019-20,19,Pun on a Footballers Name,114.0,THE MIKES TINY PENISES,126.5
+2019-20,19,The Cobras,94.0,Kane and Owl Albion,130.0
+2019-20,19,UFOE FC,57.0,Team Beige,153.5
+2019-20,20,Kane and Owl Albion,115.5,THE MIKES TINY PENISES,66.5
+2019-20,20,Kante Kepa Clean Sheet,112.25,The Cobras,71.25
+2019-20,20,Rainham Steel Select XI,88.75,Pun on a Footballers Name,107.0
+2019-20,20,Team Beige,57.75,AFC Pleasures,129.5
+2019-20,20,UFOE FC,22.5,#WinOrLose,55.5
+2019-20,21,#WinOrLose,52.75,Team Beige,114.75
+2019-20,21,Kane and Owl Albion,83.75,Rainham Steel Select XI,139.25
+2019-20,21,Pun on a Footballers Name,86.0,UFOE FC,73.0
+2019-20,21,THE MIKES TINY PENISES,72.0,Kante Kepa Clean Sheet,99.5
+2019-20,21,The Cobras,103.25,AFC Pleasures,95.75
+2019-20,22,#WinOrLose,183.0,Pun on a Footballers Name,92.5
+2019-20,22,AFC Pleasures,115.25,THE MIKES TINY PENISES,115.75
+2019-20,22,Kante Kepa Clean Sheet,109.25,Rainham Steel Select XI,80.0
+2019-20,22,Team Beige,55.25,The Cobras,72.75
+2019-20,22,UFOE FC,63.75,Kane and Owl Albion,119.0
+2019-20,23,Kane and Owl Albion,140.75,#WinOrLose,123.5
+2019-20,23,Kante Kepa Clean Sheet,78.25,UFOE FC,63.25
+2019-20,23,Pun on a Footballers Name,111.0,Team Beige,101.0
+2019-20,23,Rainham Steel Select XI,120.0,AFC Pleasures,81.0
+2019-20,23,THE MIKES TINY PENISES,107.25,The Cobras,106.5
+2019-20,24,#WinOrLose,95.0,Kante Kepa Clean Sheet,72.5
+2019-20,24,AFC Pleasures,106.0,UFOE FC,79.75
+2019-20,24,Pun on a Footballers Name,100.0,Kane and Owl Albion,129.5
+2019-20,24,Team Beige,169.75,THE MIKES TINY PENISES,104.5
+2019-20,24,The Cobras,77.5,Rainham Steel Select XI,149.25
+2019-20,25,AFC Pleasures,130.75,#WinOrLose,102.0
+2019-20,25,Kane and Owl Albion,110.75,Team Beige,79.75
+2019-20,25,Kante Kepa Clean Sheet,95.25,Pun on a Footballers Name,80.5
+2019-20,25,Rainham Steel Select XI,144.5,THE MIKES TINY PENISES,125.5
+2019-20,25,UFOE FC,0.0,The Cobras,93.75
+2019-20,26,Kane and Owl Albion,91.75,Kante Kepa Clean Sheet,116.25
+2019-20,26,Pun on a Footballers Name,93.75,AFC Pleasures,157.25
+2019-20,26,THE MIKES TINY PENISES,84.25,UFOE FC,70.5
+2019-20,26,Team Beige,61.0,Rainham Steel Select XI,103.5
+2019-20,26,The Cobras,76.0,#WinOrLose,123.0
+2019-20,27,#WinOrLose,100.75,THE MIKES TINY PENISES,153.25
+2019-20,27,AFC Pleasures,82.0,Kane and Owl Albion,140.5
+2019-20,27,Kante Kepa Clean Sheet,74.75,Team Beige,78.0
+2019-20,27,The Cobras,95.25,Pun on a Footballers Name,90.5
+2019-20,27,UFOE FC,46.0,Rainham Steel Select XI,134.75
+2019-20,28,Kane and Owl Albion,104.5,The Cobras,66.0
+2019-20,28,Kante Kepa Clean Sheet,77.75,AFC Pleasures,37.75
+2019-20,28,Rainham Steel Select XI,121.5,#WinOrLose,59.5
+2019-20,28,THE MIKES TINY PENISES,96.5,Pun on a Footballers Name,81.0
+2019-20,28,Team Beige,105.5,UFOE FC,78.25
+2019-20,29,#WinOrLose,106.5,UFOE FC,64.75
+2019-20,29,AFC Pleasures,67.5,Team Beige,99.5
+2019-20,29,Pun on a Footballers Name,82.0,Rainham Steel Select XI,102.0
+2019-20,29,THE MIKES TINY PENISES,118.25,Kane and Owl Albion,97.25
+2019-20,29,The Cobras,99.0,Kante Kepa Clean Sheet,102.75
+2019-20,30,AFC Pleasures,102.5,The Cobras,59.75
+2019-20,30,Kante Kepa Clean Sheet,103.25,THE MIKES TINY PENISES,173.25
+2019-20,30,Rainham Steel Select XI,89.0,Kane and Owl Albion,93.25
+2019-20,30,Team Beige,106.75,#WinOrLose,145.5
+2019-20,30,UFOE FC,109.0,Pun on a Footballers Name,100.25
+2019-20,31,Kane and Owl Albion,86.75,UFOE FC,64.0
+2019-20,31,Pun on a Footballers Name,122.25,#WinOrLose,94.5
+2019-20,31,Rainham Steel Select XI,91.75,Kante Kepa Clean Sheet,100.5
+2019-20,31,THE MIKES TINY PENISES,71.75,AFC Pleasures,74.0
+2019-20,31,The Cobras,141.75,Team Beige,94.75
+2019-20,32,#WinOrLose,71.25,Kane and Owl Albion,83.75
+2019-20,32,AFC Pleasures,97.25,Rainham Steel Select XI,88.25
+2019-20,32,Team Beige,94.5,Pun on a Footballers Name,87.75
+2019-20,32,The Cobras,75.25,THE MIKES TINY PENISES,92.5
+2019-20,32,UFOE FC,112.75,Kante Kepa Clean Sheet,97.5
+2019-20,33,Kane and Owl Albion,99.5,Pun on a Footballers Name,69.75
+2019-20,33,Kante Kepa Clean Sheet,108.75,#WinOrLose,131.25
+2019-20,33,Rainham Steel Select XI,86.25,The Cobras,79.25
+2019-20,33,THE MIKES TINY PENISES,124.75,Team Beige,56.75
+2019-20,33,UFOE FC,74.25,AFC Pleasures,78.0
+2019-20,34,#WinOrLose,118.5,AFC Pleasures,116.75
+2019-20,34,Pun on a Footballers Name,105.75,Kante Kepa Clean Sheet,100.75
+2019-20,34,THE MIKES TINY PENISES,111.25,Rainham Steel Select XI,170.5
+2019-20,34,Team Beige,75.0,Kane and Owl Albion,84.75
+2019-20,34,The Cobras,68.75,UFOE FC,113.0
+2019-20,35,#WinOrLose,114.75,The Cobras,118.0
+2019-20,35,AFC Pleasures,67.25,Pun on a Footballers Name,49.5
+2019-20,35,Kante Kepa Clean Sheet,145.75,Kane and Owl Albion,129.5
+2019-20,35,Rainham Steel Select XI,87.75,Team Beige,79.75
+2019-20,35,UFOE FC,82.75,THE MIKES TINY PENISES,93.25
+2019-20,36,Kane and Owl Albion,115.75,AFC Pleasures,59.75
+2019-20,36,Pun on a Footballers Name,62.5,The Cobras,80.75
+2019-20,36,Rainham Steel Select XI,106.5,UFOE FC,84.25
+2019-20,36,THE MIKES TINY PENISES,74.75,#WinOrLose,60.25
+2019-20,36,Team Beige,125.5,Kante Kepa Clean Sheet,104.0
+2019-20,37,#WinOrLose,71.25,Rainham Steel Select XI,85.75
+2019-20,37,AFC Pleasures,86.25,Kante Kepa Clean Sheet,153.25
+2019-20,37,Pun on a Footballers Name,75.25,THE MIKES TINY PENISES,117.25
+2019-20,37,The Cobras,83.75,Kane and Owl Albion,119.25
+2019-20,37,UFOE FC,104.5,Team Beige,53.5
+2019-20,38,Kane and Owl Albion,77.25,THE MIKES TINY PENISES,98.0
+2019-20,38,Kante Kepa Clean Sheet,126.5,The Cobras,61.25
+2019-20,38,Rainham Steel Select XI,64.75,Pun on a Footballers Name,106.75
+2019-20,38,Team Beige,95.5,AFC Pleasures,123.0
+2019-20,38,UFOE FC,80.5,#WinOrLose,92.75
+2020-21,1,Kane and Owl Albion,114.0,Kante Kepa Clean Sheet,95.0
+2020-21,1,Pun on a Footballers Name,111.25,#WinOrLose,83.0
+2020-21,1,THE MIKES TINY PENISES,120.5,Team Beige,29.25
+2020-21,1,The Cobras,86.0,AFC Pleasures,66.25
+2020-21,1,UFOE FC,31.0,Rainham Steel Select XI,145.0
+2020-21,2,#WinOrLose,61.0,The Cobras,95.75
+2020-21,2,AFC Pleasures,118.25,Rainham Steel Select XI,143.0
+2020-21,2,Kante Kepa Clean Sheet,115.75,UFOE FC,42.0
+2020-21,2,THE MIKES TINY PENISES,96.0,Kane and Owl Albion,52.5
+2020-21,2,Team Beige,67.5,Pun on a Footballers Name,113.25
+2020-21,3,AFC Pleasures,103.75,Kante Kepa Clean Sheet,117.0
+2020-21,3,Kane and Owl Albion,87.5,Team Beige,77.0
+2020-21,3,Rainham Steel Select XI,56.0,#WinOrLose,76.25
+2020-21,3,The Cobras,15.0,Pun on a Footballers Name,110.0
+2020-21,3,UFOE FC,73.25,THE MIKES TINY PENISES,106.0
+2020-21,4,#WinOrLose,105.0,Kante Kepa Clean Sheet,108.5
+2020-21,4,Kane and Owl Albion,78.0,UFOE FC,154.25
+2020-21,4,Pun on a Footballers Name,104.0,Rainham Steel Select XI,115.0
+2020-21,4,THE MIKES TINY PENISES,99.0,AFC Pleasures,101.25
+2020-21,4,Team Beige,69.5,The Cobras,32.5
+2020-21,5,#WinOrLose,129.25,THE MIKES TINY PENISES,131.5
+2020-21,5,AFC Pleasures,79.5,Kane and Owl Albion,57.75
+2020-21,5,Kante Kepa Clean Sheet,122.75,Pun on a Footballers Name,106.5
+2020-21,5,Rainham Steel Select XI,118.75,The Cobras,89.25
+2020-21,5,UFOE FC,111.0,Team Beige,82.25
+2020-21,6,Kane and Owl Albion,65.75,#WinOrLose,56.5
+2020-21,6,Pun on a Footballers Name,91.25,THE MIKES TINY PENISES,64.25
+2020-21,6,Team Beige,68.25,Rainham Steel Select XI,91.0
+2020-21,6,The Cobras,64.5,Kante Kepa Clean Sheet,118.0
+2020-21,6,UFOE FC,73.25,AFC Pleasures,73.75
+2020-21,7,#WinOrLose,73.0,UFOE FC,90.5
+2020-21,7,AFC Pleasures,164.0,Team Beige,44.75
+2020-21,7,Kante Kepa Clean Sheet,129.5,Rainham Steel Select XI,57.0
+2020-21,7,Pun on a Footballers Name,106.0,Kane and Owl Albion,60.75
+2020-21,7,THE MIKES TINY PENISES,117.25,The Cobras,82.0
+2020-21,8,AFC Pleasures,86.75,#WinOrLose,122.75
+2020-21,8,Rainham Steel Select XI,70.5,THE MIKES TINY PENISES,108.5
+2020-21,8,Team Beige,105.0,Kante Kepa Clean Sheet,97.0
+2020-21,8,The Cobras,96.5,Kane and Owl Albion,80.5
+2020-21,8,UFOE FC,97.75,Pun on a Footballers Name,91.75
+2020-21,9,#WinOrLose,72.25,Team Beige,91.5
+2020-21,9,Kane and Owl Albion,71.75,Rainham Steel Select XI,95.75
+2020-21,9,Pun on a Footballers Name,129.75,AFC Pleasures,137.75
+2020-21,9,THE MIKES TINY PENISES,124.25,Kante Kepa Clean Sheet,68.5
+2020-21,9,The Cobras,98.25,UFOE FC,99.25
+2020-21,10,#WinOrLose,70.75,Pun on a Footballers Name,113.5
+2020-21,10,AFC Pleasures,84.5,The Cobras,49.25
+2020-21,10,Kante Kepa Clean Sheet,80.75,Kane and Owl Albion,86.5
+2020-21,10,Rainham Steel Select XI,95.0,UFOE FC,107.5
+2020-21,10,Team Beige,88.75,THE MIKES TINY PENISES,55.25
+2020-21,11,Kane and Owl Albion,111.0,THE MIKES TINY PENISES,130.0
+2020-21,11,Pun on a Footballers Name,75.0,Team Beige,51.5
+2020-21,11,Rainham Steel Select XI,139.75,AFC Pleasures,133.75
+2020-21,11,The Cobras,76.25,#WinOrLose,60.5
+2020-21,11,UFOE FC,81.5,Kante Kepa Clean Sheet,77.5
+2020-21,12,#WinOrLose,71.75,Rainham Steel Select XI,128.25
+2020-21,12,Kante Kepa Clean Sheet,75.0,AFC Pleasures,91.25
+2020-21,12,Pun on a Footballers Name,120.75,The Cobras,99.0
+2020-21,12,THE MIKES TINY PENISES,131.25,UFOE FC,94.25
+2020-21,12,Team Beige,101.75,Kane and Owl Albion,91.25
+2020-21,13,AFC Pleasures,80.25,THE MIKES TINY PENISES,103.25
+2020-21,13,Kante Kepa Clean Sheet,94.0,#WinOrLose,120.75
+2020-21,13,Rainham Steel Select XI,51.5,Pun on a Footballers Name,96.5
+2020-21,13,The Cobras,65.75,Team Beige,99.0
+2020-21,13,UFOE FC,100.0,Kane and Owl Albion,94.0
+2020-21,14,Kane and Owl Albion,98.25,AFC Pleasures,108.0
+2020-21,14,Pun on a Footballers Name,132.0,Kante Kepa Clean Sheet,73.75
+2020-21,14,THE MIKES TINY PENISES,116.75,#WinOrLose,90.5
+2020-21,14,Team Beige,49.0,UFOE FC,156.0
+2020-21,14,The Cobras,61.0,Rainham Steel Select XI,79.25
+2020-21,15,#WinOrLose,111.75,Kane and Owl Albion,116.5
+2020-21,15,AFC Pleasures,98.0,UFOE FC,107.25
+2020-21,15,Kante Kepa Clean Sheet,79.25,The Cobras,89.75
+2020-21,15,Rainham Steel Select XI,69.75,Team Beige,77.5
+2020-21,15,THE MIKES TINY PENISES,110.5,Pun on a Footballers Name,104.0
+2020-21,16,Kane and Owl Albion,71.25,Pun on a Footballers Name,43.0
+2020-21,16,Rainham Steel Select XI,99.0,Kante Kepa Clean Sheet,46.5
+2020-21,16,Team Beige,64.5,AFC Pleasures,94.25
+2020-21,16,The Cobras,92.25,THE MIKES TINY PENISES,89.0
+2020-21,16,UFOE FC,91.0,#WinOrLose,79.5
+2020-21,17,#WinOrLose,191.0,AFC Pleasures,69.5
+2020-21,17,Kane and Owl Albion,80.5,The Cobras,135.25
+2020-21,17,Kante Kepa Clean Sheet,77.5,Team Beige,68.75
+2020-21,17,Pun on a Footballers Name,111.25,UFOE FC,82.5
+2020-21,17,THE MIKES TINY PENISES,107.0,Rainham Steel Select XI,110.5
+2020-21,18,AFC Pleasures,87.5,Pun on a Footballers Name,64.25
+2020-21,18,Kante Kepa Clean Sheet,104.0,THE MIKES TINY PENISES,48.0
+2020-21,18,Rainham Steel Select XI,76.5,Kane and Owl Albion,34.0
+2020-21,18,Team Beige,86.25,#WinOrLose,84.5
+2020-21,18,UFOE FC,54.25,The Cobras,58.0
+2020-21,19,Kane and Owl Albion,157.5,Kante Kepa Clean Sheet,152.5
+2020-21,19,Pun on a Footballers Name,211.5,#WinOrLose,198.0
+2020-21,19,THE MIKES TINY PENISES,167.75,Team Beige,77.5
+2020-21,19,The Cobras,149.0,AFC Pleasures,189.0
+2020-21,19,UFOE FC,208.75,Rainham Steel Select XI,175.25
+2020-21,20,#WinOrLose,106.0,The Cobras,96.5
+2020-21,20,AFC Pleasures,86.25,Rainham Steel Select XI,150.0
+2020-21,20,Kante Kepa Clean Sheet,75.5,UFOE FC,107.25
+2020-21,20,THE MIKES TINY PENISES,138.0,Kane and Owl Albion,114.25
+2020-21,20,Team Beige,99.75,Pun on a Footballers Name,100.75
+2020-21,21,AFC Pleasures,126.0,Kante Kepa Clean Sheet,69.5
+2020-21,21,Kane and Owl Albion,69.75,Team Beige,85.25
+2020-21,21,Rainham Steel Select XI,97.5,#WinOrLose,73.5
+2020-21,21,The Cobras,110.0,Pun on a Footballers Name,116.75
+2020-21,21,UFOE FC,93.0,THE MIKES TINY PENISES,124.75
+2020-21,22,#WinOrLose,114.75,Kante Kepa Clean Sheet,87.25
+2020-21,22,Kane and Owl Albion,76.25,UFOE FC,111.25
+2020-21,22,Pun on a Footballers Name,125.0,Rainham Steel Select XI,126.5
+2020-21,22,THE MIKES TINY PENISES,87.75,AFC Pleasures,69.0
+2020-21,22,Team Beige,112.25,The Cobras,57.5
+2020-21,23,#WinOrLose,92.75,THE MIKES TINY PENISES,86.75
+2020-21,23,AFC Pleasures,109.0,Kane and Owl Albion,100.25
+2020-21,23,Kante Kepa Clean Sheet,105.25,Pun on a Footballers Name,102.75
+2020-21,23,Rainham Steel Select XI,131.25,The Cobras,81.25
+2020-21,23,UFOE FC,100.0,Team Beige,111.75
+2020-21,24,Kane and Owl Albion,136.75,#WinOrLose,133.5
+2020-21,24,Pun on a Footballers Name,171.25,THE MIKES TINY PENISES,129.0
+2020-21,24,Team Beige,85.25,Rainham Steel Select XI,120.5
+2020-21,24,The Cobras,101.25,Kante Kepa Clean Sheet,115.25
+2020-21,24,UFOE FC,157.25,Kane and Owl Albion,121.25
+2020-21,25,#WinOrLose,70.0,UFOE FC,113.25
+2020-21,25,AFC Pleasures,71.25,Team Beige,154.75
+2020-21,25,Kante Kepa Clean Sheet,85.25,Rainham Steel Select XI,136.0
+2020-21,25,Pun on a Footballers Name,134.0,Kane and Owl Albion,109.5
+2020-21,25,THE MIKES TINY PENISES,82.25,The Cobras,90.25
+2020-21,26,AFC Pleasures,178.5,#WinOrLose,166.25
+2020-21,26,Rainham Steel Select XI,192.5,THE MIKES TINY PENISES,180.0
+2020-21,26,Team Beige,131.5,Kante Kepa Clean Sheet,165.0
+2020-21,26,The Cobras,121.75,Kane and Owl Albion,113.25
+2020-21,26,UFOE FC,192.5,Pun on a Footballers Name,155.5
+2020-21,27,#WinOrLose,139.25,Team Beige,130.25
+2020-21,27,Kane and Owl Albion,114.25,Rainham Steel Select XI,86.0
+2020-21,27,Pun on a Footballers Name,99.25,AFC Pleasures,87.5
+2020-21,27,THE MIKES TINY PENISES,96.75,Kante Kepa Clean Sheet,112.25
+2020-21,27,The Cobras,112.5,UFOE FC,115.0
+2020-21,28,#WinOrLose,60.0,Pun on a Footballers Name,116.25
+2020-21,28,AFC Pleasures,76.25,The Cobras,134.25
+2020-21,28,Kante Kepa Clean Sheet,98.25,Kane and Owl Albion,87.25
+2020-21,28,Rainham Steel Select XI,115.75,UFOE FC,81.5
+2020-21,28,Team Beige,76.75,THE MIKES TINY PENISES,101.5
+2020-21,29,Kane and Owl Albion,59.75,THE MIKES TINY PENISES,11.5
+2020-21,29,Pun on a Footballers Name,54.75,Team Beige,38.75
+2020-21,29,Rainham Steel Select XI,75.0,AFC Pleasures,73.25
+2020-21,29,The Cobras,60.5,#WinOrLose,82.5
+2020-21,29,UFOE FC,35.0,Kante Kepa Clean Sheet,41.5
+2020-21,30,#WinOrLose,82.0,Rainham Steel Select XI,131.5
+2020-21,30,Kante Kepa Clean Sheet,121.5,AFC Pleasures,58.5
+2020-21,30,Pun on a Footballers Name,141.0,The Cobras,54.75
+2020-21,30,THE MIKES TINY PENISES,78.5,UFOE FC,96.5
+2020-21,30,Team Beige,57.75,Kane and Owl Albion,114.0
+2020-21,31,AFC Pleasures,130.75,THE MIKES TINY PENISES,115.5
+2020-21,31,Kante Kepa Clean Sheet,86.75,#WinOrLose,90.5
+2020-21,31,Rainham Steel Select XI,120.75,Pun on a Footballers Name,108.25
+2020-21,31,The Cobras,99.0,Team Beige,64.25
+2020-21,31,UFOE FC,128.75,Kane and Owl Albion,73.5
+2020-21,32,Kane and Owl Albion,104.5,AFC Pleasures,106.5
+2020-21,32,Pun on a Footballers Name,115.75,Kante Kepa Clean Sheet,103.5
+2020-21,32,THE MIKES TINY PENISES,156.0,#WinOrLose,47.5
+2020-21,32,Team Beige,103.5,UFOE FC,36.25
+2020-21,32,The Cobras,58.75,Rainham Steel Select XI,130.25
+2020-21,33,#WinOrLose,93.5,Kane and Owl Albion,71.5
+2020-21,33,AFC Pleasures,84.75,UFOE FC,100.75
+2020-21,33,Kante Kepa Clean Sheet,82.25,The Cobras,140.5
+2020-21,33,Rainham Steel Select XI,111.75,Team Beige,74.0
+2020-21,33,THE MIKES TINY PENISES,107.0,Pun on a Footballers Name,111.25
+2020-21,34,Kane and Owl Albion,80.75,Pun on a Footballers Name,112.0
+2020-21,34,Rainham Steel Select XI,141.75,Kante Kepa Clean Sheet,138.0
+2020-21,34,Team Beige,67.75,AFC Pleasures,76.25
+2020-21,34,The Cobras,82.25,THE MIKES TINY PENISES,120.5
+2020-21,34,UFOE FC,69.0,#WinOrLose,138.5
+2020-21,35,#WinOrLose,87.5,AFC Pleasures,201.75
+2020-21,35,Kane and Owl Albion,166.75,The Cobras,181.75
+2020-21,35,Kante Kepa Clean Sheet,115.5,Team Beige,126.75
+2020-21,35,Pun on a Footballers Name,138.0,UFOE FC,81.0
+2020-21,35,THE MIKES TINY PENISES,235.25,Rainham Steel Select XI,126.75
+2020-21,36,AFC Pleasures,44.75,Pun on a Footballers Name,125.75
+2020-21,36,Kante Kepa Clean Sheet,77.25,THE MIKES TINY PENISES,118.75
+2020-21,36,Rainham Steel Select XI,71.5,Kane and Owl Albion,73.5
+2020-21,36,Team Beige,114.5,#WinOrLose,78.75
+2020-21,36,UFOE FC,124.75,The Cobras,50.5
+2020-21,37,Kane and Owl Albion,69.5,Kante Kepa Clean Sheet,64.25
+2020-21,37,Pun on a Footballers Name,78.75,#WinOrLose,64.25
+2020-21,37,THE MIKES TINY PENISES,129.0,Team Beige,104.75
+2020-21,37,The Cobras,158.75,AFC Pleasures,77.0
+2020-21,37,UFOE FC,117.25,Rainham Steel Select XI,82.75
+2020-21,38,#WinOrLose,125.25,The Cobras,93.0
+2020-21,38,AFC Pleasures,135.75,Rainham Steel Select XI,98.75
+2020-21,38,Kante Kepa Clean Sheet,111.0,UFOE FC,88.25
+2020-21,38,THE MIKES TINY PENISES,138.25,Kane and Owl Albion,124.25
+2020-21,38,Team Beige,52.75,Pun on a Footballers Name,81.5
+2021-22,1,#WinOrLose,149.75,THE MIKES TINY PENISES,97.0
+2021-22,1,AFC Pleasures,101.0,Pun on a Footballers Name,153.0
+2021-22,1,Kante Kepa Clean Sheet,54.75,Rainham Steel Select XI,133.75
+2021-22,1,Team Beige,130.75,The Cobras,68.0
+2021-22,1,UFOE FC,67.0,Kane and Owl Albion,97.75
+2021-22,2,Kane and Owl Albion,107.5,#WinOrLose,104.5
+2021-22,2,Pun on a Footballers Name,117.25,Kante Kepa Clean Sheet,68.5
+2021-22,2,Rainham Steel Select XI,172.0,THE MIKES TINY PENISES,96.75
+2021-22,2,Team Beige,133.75,UFOE FC,76.5
+2021-22,2,The Cobras,98.5,AFC Pleasures,111.0
+2021-22,3,#WinOrLose,100.0,Team Beige,131.5
+2021-22,3,Kante Kepa Clean Sheet,36.5,AFC Pleasures,96.25
+2021-22,3,Rainham Steel Select XI,105.25,Kane and Owl Albion,101.25
+2021-22,3,THE MIKES TINY PENISES,103.5,Pun on a Footballers Name,88.75
+2021-22,3,UFOE FC,77.0,The Cobras,91.5
+2021-22,4,AFC Pleasures,131.0,THE MIKES TINY PENISES,92.25
+2021-22,4,Pun on a Footballers Name,100.25,Kane and Owl Albion,122.25
+2021-22,4,Team Beige,96.75,Rainham Steel Select XI,56.75
+2021-22,4,The Cobras,89.5,Kante Kepa Clean Sheet,130.75
+2021-22,4,UFOE FC,80.5,#WinOrLose,81.25
+2021-22,5,#WinOrLose,132.0,The Cobras,98.25
+2021-22,5,Kane and Owl Albion,97.75,AFC Pleasures,133.0
+2021-22,5,Pun on a Footballers Name,115.25,Team Beige,86.75
+2021-22,5,Rainham Steel Select XI,48.5,UFOE FC,95.75
+2021-22,5,THE MIKES TINY PENISES,84.5,Kante Kepa Clean Sheet,125.25
+2021-22,6,#WinOrLose,151.25,Rainham Steel Select XI,109.75
+2021-22,6,AFC Pleasures,110.25,Team Beige,96.5
+2021-22,6,Kante Kepa Clean Sheet,73.25,Kane and Owl Albion,105.0
+2021-22,6,The Cobras,85.0,THE MIKES TINY PENISES,111.5
+2021-22,6,UFOE FC,36.0,Pun on a Footballers Name,86.0
+2021-22,7,AFC Pleasures,110.75,UFOE FC,83.25
+2021-22,7,Kane and Owl Albion,68.25,THE MIKES TINY PENISES,101.25
+2021-22,7,Pun on a Footballers Name,97.25,#WinOrLose,75.75
+2021-22,7,Rainham Steel Select XI,86.75,The Cobras,106.75
+2021-22,7,Team Beige,99.5,Kante Kepa Clean Sheet,90.5
+2021-22,8,#WinOrLose,172.0,AFC Pleasures,91.25
+2021-22,8,Kante Kepa Clean Sheet,83.25,UFOE FC,83.5
+2021-22,8,Rainham Steel Select XI,119.25,Pun on a Footballers Name,71.5
+2021-22,8,THE MIKES TINY PENISES,61.25,Team Beige,77.5
+2021-22,8,The Cobras,115.25,Kane and Owl Albion,121.75
+2021-22,9,AFC Pleasures,98.25,Rainham Steel Select XI,128.75
+2021-22,9,Kante Kepa Clean Sheet,110.0,#WinOrLose,129.75
+2021-22,9,Pun on a Footballers Name,114.0,The Cobras,103.5
+2021-22,9,Team Beige,83.75,Kane and Owl Albion,61.25
+2021-22,9,UFOE FC,112.25,THE MIKES TINY PENISES,139.5
+2021-22,10,Kane and Owl Albion,96.5,UFOE FC,118.5
+2021-22,10,Pun on a Footballers Name,93.5,AFC Pleasures,82.5
+2021-22,10,Rainham Steel Select XI,108.0,Kante Kepa Clean Sheet,102.25
+2021-22,10,THE MIKES TINY PENISES,109.5,#WinOrLose,110.0
+2021-22,10,The Cobras,94.5,Team Beige,46.25
+2021-22,11,#WinOrLose,76.5,Kane and Owl Albion,89.25
+2021-22,11,AFC Pleasures,113.75,The Cobras,53.0
+2021-22,11,Kante Kepa Clean Sheet,128.5,Pun on a Footballers Name,87.5
+2021-22,11,THE MIKES TINY PENISES,125.0,Rainham Steel Select XI,83.75
+2021-22,11,UFOE FC,58.75,Team Beige,52.0
+2021-22,12,AFC Pleasures,82.25,Kante Kepa Clean Sheet,91.5
+2021-22,12,Kane and Owl Albion,122.5,Rainham Steel Select XI,105.0
+2021-22,12,Pun on a Footballers Name,123.0,THE MIKES TINY PENISES,90.5
+2021-22,12,Team Beige,119.0,#WinOrLose,115.25
+2021-22,12,The Cobras,105.25,UFOE FC,79.75
+2021-22,13,#WinOrLose,76.0,UFOE FC,35.75
+2021-22,13,Kane and Owl Albion,168.75,Pun on a Footballers Name,95.0
+2021-22,13,Kante Kepa Clean Sheet,126.25,The Cobras,70.25
+2021-22,13,Rainham Steel Select XI,90.5,Team Beige,105.25
+2021-22,13,THE MIKES TINY PENISES,137.75,AFC Pleasures,67.0
+2021-22,14,AFC Pleasures,122.75,Kane and Owl Albion,96.25
+2021-22,14,Kante Kepa Clean Sheet,55.25,THE MIKES TINY PENISES,124.75
+2021-22,14,Team Beige,131.75,Pun on a Footballers Name,119.0
+2021-22,14,The Cobras,108.75,#WinOrLose,134.0
+2021-22,14,UFOE FC,92.0,Rainham Steel Select XI,93.75
+2021-22,15,Kane and Owl Albion,94.75,Kante Kepa Clean Sheet,109.25
+2021-22,15,Pun on a Footballers Name,110.75,UFOE FC,61.5
+2021-22,15,Rainham Steel Select XI,89.0,#WinOrLose,89.5
+2021-22,15,THE MIKES TINY PENISES,128.5,The Cobras,92.5
+2021-22,15,Team Beige,70.75,AFC Pleasures,94.5
+2021-22,16,#WinOrLose,115.0,Pun on a Footballers Name,123.75
+2021-22,16,Kante Kepa Clean Sheet,100.0,Team Beige,100.5
+2021-22,16,THE MIKES TINY PENISES,177.5,Kane and Owl Albion,151.25
+2021-22,16,The Cobras,101.25,Rainham Steel Select XI,45.75
+2021-22,16,UFOE FC,109.5,AFC Pleasures,109.0
+2021-22,17,AFC Pleasures,101.0,#WinOrLose,101.25
+2021-22,17,Kane and Owl Albion,74.25,The Cobras,93.5
+2021-22,17,Pun on a Footballers Name,110.75,Rainham Steel Select XI,87.75
+2021-22,17,Team Beige,88.75,THE MIKES TINY PENISES,84.75
+2021-22,17,UFOE FC,68.0,Kante Kepa Clean Sheet,137.0
+2021-22,18,#WinOrLose,68.75,Kante Kepa Clean Sheet,74.25
+2021-22,18,Kane and Owl Albion,77.25,Team Beige,20.25
+2021-22,18,Rainham Steel Select XI,74.5,AFC Pleasures,64.5
+2021-22,18,THE MIKES TINY PENISES,103.5,UFOE FC,50.25
+2021-22,18,The Cobras,97.75,Pun on a Footballers Name,76.25
+2021-22,19,#WinOrLose,129.75,THE MIKES TINY PENISES,78.25
+2021-22,19,AFC Pleasures,70.25,Pun on a Footballers Name,131.0
+2021-22,19,Kante Kepa Clean Sheet,142.0,Rainham Steel Select XI,103.75
+2021-22,19,Team Beige,58.5,The Cobras,126.75
+2021-22,19,UFOE FC,52.5,Kane and Owl Albion,101.5
+2021-22,20,Kane and Owl Albion,78.0,#WinOrLose,67.75
+2021-22,20,Pun on a Footballers Name,114.25,Kante Kepa Clean Sheet,91.25
+2021-22,20,Rainham Steel Select XI,48.5,THE MIKES TINY PENISES,91.0
+2021-22,20,Team Beige,40.5,UFOE FC,92.0
+2021-22,20,The Cobras,84.5,AFC Pleasures,84.5
+2021-22,21,#WinOrLose,71.75,Team Beige,76.5
+2021-22,21,Kante Kepa Clean Sheet,69.5,AFC Pleasures,136.5
+2021-22,21,Rainham Steel Select XI,130.0,Kane and Owl Albion,85.0
+2021-22,21,THE MIKES TINY PENISES,84.25,Pun on a Footballers Name,119.25
+2021-22,21,UFOE FC,56.5,The Cobras,119.25
+2021-22,22,AFC Pleasures,145.0,THE MIKES TINY PENISES,120.5
+2021-22,22,Pun on a Footballers Name,128.75,Kane and Owl Albion,161.75
+2021-22,22,Team Beige,108.75,Rainham Steel Select XI,117.5
+2021-22,22,The Cobras,40.5,Kante Kepa Clean Sheet,105.0
+2021-22,22,UFOE FC,151.5,#WinOrLose,132.75
+2021-22,23,#WinOrLose,90.75,The Cobras,68.0
+2021-22,23,Kane and Owl Albion,120.5,AFC Pleasures,117.75
+2021-22,23,Pun on a Footballers Name,114.0,Team Beige,128.0
+2021-22,23,Rainham Steel Select XI,123.0,UFOE FC,82.5
+2021-22,23,THE MIKES TINY PENISES,75.25,Kante Kepa Clean Sheet,123.25
+2021-22,24,#WinOrLose,106.25,Rainham Steel Select XI,79.0
+2021-22,24,AFC Pleasures,116.25,Team Beige,83.5
+2021-22,24,Kante Kepa Clean Sheet,110.25,Kane and Owl Albion,101.5
+2021-22,24,The Cobras,111.5,THE MIKES TINY PENISES,102.75
+2021-22,24,UFOE FC,118.75,Pun on a Footballers Name,109.5
+2021-22,25,AFC Pleasures,142.0,UFOE FC,146.75
+2021-22,25,Kane and Owl Albion,109.0,THE MIKES TINY PENISES,88.25
+2021-22,25,Pun on a Footballers Name,97.25,#WinOrLose,115.0
+2021-22,25,Rainham Steel Select XI,81.5,The Cobras,118.0
+2021-22,25,Team Beige,109.25,Kante Kepa Clean Sheet,93.75
+2021-22,26,#WinOrLose,156.5,AFC Pleasures,171.5
+2021-22,26,Kante Kepa Clean Sheet,120.25,UFOE FC,87.5
+2021-22,26,Rainham Steel Select XI,206.0,Pun on a Footballers Name,156.75
+2021-22,26,THE MIKES TINY PENISES,144.5,Team Beige,129.75
+2021-22,26,The Cobras,117.25,Kane and Owl Albion,163.0
+2021-22,27,AFC Pleasures,107.25,Rainham Steel Select XI,101.25
+2021-22,27,Kante Kepa Clean Sheet,120.0,#WinOrLose,93.25
+2021-22,27,Pun on a Footballers Name,106.25,The Cobras,98.5
+2021-22,27,Team Beige,113.75,Kane and Owl Albion,126.5
+2021-22,27,UFOE FC,134.75,THE MIKES TINY PENISES,86.75
+2021-22,28,Kane and Owl Albion,157.75,UFOE FC,140.25
+2021-22,28,Pun on a Footballers Name,192.25,AFC Pleasures,139.25
+2021-22,28,Rainham Steel Select XI,151.0,Kante Kepa Clean Sheet,223.75
+2021-22,28,THE MIKES TINY PENISES,107.25,#WinOrLose,180.0
+2021-22,28,The Cobras,178.0,Team Beige,80.75
+2021-22,29,#WinOrLose,82.75,Kane and Owl Albion,173.0
+2021-22,29,AFC Pleasures,150.25,The Cobras,119.75
+2021-22,29,Kante Kepa Clean Sheet,120.0,Pun on a Footballers Name,124.5
+2021-22,29,THE MIKES TINY PENISES,82.0,Rainham Steel Select XI,128.5
+2021-22,29,UFOE FC,171.5,Team Beige,94.0
+2021-22,30,AFC Pleasures,29.75,Kante Kepa Clean Sheet,47.75
+2021-22,30,Kane and Owl Albion,63.5,Rainham Steel Select XI,57.75
+2021-22,30,Pun on a Footballers Name,28.0,THE MIKES TINY PENISES,37.5
+2021-22,30,Team Beige,6.0,#WinOrLose,54.75
+2021-22,30,The Cobras,58.0,UFOE FC,84.5
+2021-22,31,#WinOrLose,97.5,UFOE FC,86.75
+2021-22,31,Kane and Owl Albion,155.0,Pun on a Footballers Name,52.5
+2021-22,31,Kante Kepa Clean Sheet,113.5,The Cobras,90.75
+2021-22,31,Rainham Steel Select XI,111.75,Team Beige,55.0
+2021-22,31,THE MIKES TINY PENISES,125.5,AFC Pleasures,91.0
+2021-22,32,AFC Pleasures,104.5,Kane and Owl Albion,106.0
+2021-22,32,Kante Kepa Clean Sheet,99.75,THE MIKES TINY PENISES,80.75
+2021-22,32,Team Beige,45.0,Pun on a Footballers Name,156.0
+2021-22,32,The Cobras,91.0,#WinOrLose,56.75
+2021-22,32,UFOE FC,69.25,Rainham Steel Select XI,42.5
+2021-22,33,Kane and Owl Albion,116.0,Kante Kepa Clean Sheet,182.75
+2021-22,33,Pun on a Footballers Name,101.5,UFOE FC,137.5
+2021-22,33,Rainham Steel Select XI,78.25,#WinOrLose,194.75
+2021-22,33,THE MIKES TINY PENISES,101.5,The Cobras,111.75
+2021-22,33,Team Beige,115.75,AFC Pleasures,133.0
+2021-22,34,#WinOrLose,152.25,Pun on a Footballers Name,161.25
+2021-22,34,Kante Kepa Clean Sheet,95.75,Team Beige,80.75
+2021-22,34,THE MIKES TINY PENISES,150.75,Kane and Owl Albion,115.75
+2021-22,34,The Cobras,87.5,Rainham Steel Select XI,55.5
+2021-22,34,UFOE FC,84.0,AFC Pleasures,110.75
+2021-22,35,AFC Pleasures,88.0,#WinOrLose,83.25
+2021-22,35,Kane and Owl Albion,99.25,The Cobras,112.75
+2021-22,35,Pun on a Footballers Name,59.0,Rainham Steel Select XI,54.75
+2021-22,35,Team Beige,98.5,THE MIKES TINY PENISES,109.25
+2021-22,35,UFOE FC,131.25,Kante Kepa Clean Sheet,112.25
+2021-22,36,#WinOrLose,170.5,Kante Kepa Clean Sheet,208.25
+2021-22,36,Kane and Owl Albion,170.75,Team Beige,163.0
+2021-22,36,Rainham Steel Select XI,180.75,AFC Pleasures,178.25
+2021-22,36,THE MIKES TINY PENISES,133.75,UFOE FC,115.5
+2021-22,36,The Cobras,211.0,Pun on a Footballers Name,122.0
+2021-22,37,#WinOrLose,137.25,THE MIKES TINY PENISES,113.25
+2021-22,37,AFC Pleasures,74.75,Pun on a Footballers Name,105.25
+2021-22,37,Kante Kepa Clean Sheet,128.75,Rainham Steel Select XI,189.75
+2021-22,37,Team Beige,85.0,The Cobras,70.0
+2021-22,37,UFOE FC,114.25,Kane and Owl Albion,170.25
+2021-22,38,Kane and Owl Albion,146.75,#WinOrLose,79.75
+2021-22,38,Pun on a Footballers Name,124.0,Kante Kepa Clean Sheet,75.5
+2021-22,38,Rainham Steel Select XI,146.0,THE MIKES TINY PENISES,92.25
+2021-22,38,Team Beige,54.75,UFOE FC,119.25
+2021-22,38,The Cobras,97.25,AFC Pleasures,108.25
+2022-23,1,#WinOrLose,126.25,Pun on a Footballers Name,118.0
+2022-23,1,Kane and Owl Albion,125.75,AFC Pleasures,113.0
+2022-23,1,Rainham Steel Select XI,161.75,THE MIKES TINY PENISES,79.0
+2022-23,1,Team Beige,97.75,UFOE FC,61.75
+2022-23,1,The Cobras,86.25,Kante Kepa Clean Sheet,115.0
+2022-23,2,AFC Pleasures,48.75,Pun on a Footballers Name,93.75
+2022-23,2,Kante Kepa Clean Sheet,78.5,Rainham Steel Select XI,72.0
+2022-23,2,THE MIKES TINY PENISES,95.25,Kane and Owl Albion,86.5
+2022-23,2,The Cobras,122.25,Team Beige,115.0
+2022-23,2,UFOE FC,106.5,#WinOrLose,92.0
+2022-23,3,#WinOrLose,100.75,The Cobras,70.25
+2022-23,3,AFC Pleasures,125.5,UFOE FC,106.0
+2022-23,3,Kane and Owl Albion,92.5,Rainham Steel Select XI,106.75
+2022-23,3,Pun on a Footballers Name,93.25,THE MIKES TINY PENISES,130.0
+2022-23,3,Team Beige,101.25,Kante Kepa Clean Sheet,114.75
+2022-23,4,Kante Kepa Clean Sheet,77.25,Kane and Owl Albion,119.5
+2022-23,4,Rainham Steel Select XI,90.75,Pun on a Footballers Name,107.25
+2022-23,4,THE MIKES TINY PENISES,142.25,UFOE FC,169.0
+2022-23,4,Team Beige,103.0,#WinOrLose,107.5
+2022-23,4,The Cobras,80.75,AFC Pleasures,122.0
+2022-23,5,#WinOrLose,146.75,Kante Kepa Clean Sheet,97.0
+2022-23,5,AFC Pleasures,63.5,Team Beige,68.25
+2022-23,5,Pun on a Footballers Name,92.75,Kane and Owl Albion,73.25
+2022-23,5,THE MIKES TINY PENISES,77.25,The Cobras,68.75
+2022-23,5,UFOE FC,75.5,Rainham Steel Select XI,50.25
+2022-23,6,#WinOrLose,97.75,AFC Pleasures,72.25
+2022-23,6,Kane and Owl Albion,72.5,UFOE FC,133.0
+2022-23,6,Kante Kepa Clean Sheet,92.25,Pun on a Footballers Name,89.75
+2022-23,6,Rainham Steel Select XI,74.5,The Cobras,118.0
+2022-23,6,Team Beige,46.0,THE MIKES TINY PENISES,70.75
+2022-23,8,AFC Pleasures,124.0,Kante Kepa Clean Sheet,99.25
+2022-23,8,Rainham Steel Select XI,87.5,Team Beige,47.0
+2022-23,8,THE MIKES TINY PENISES,76.0,#WinOrLose,80.75
+2022-23,8,The Cobras,102.5,Kane and Owl Albion,74.0
+2022-23,8,UFOE FC,65.75,Pun on a Footballers Name,100.25
+2022-23,9,#WinOrLose,129.75,Rainham Steel Select XI,77.25
+2022-23,9,AFC Pleasures,50.5,THE MIKES TINY PENISES,108.0
+2022-23,9,Kane and Owl Albion,28.0,Team Beige,89.5
+2022-23,9,Kante Kepa Clean Sheet,81.25,UFOE FC,131.75
+2022-23,9,Pun on a Footballers Name,85.5,The Cobras,116.75
+2022-23,10,Kane and Owl Albion,72.25,#WinOrLose,138.5
+2022-23,10,Rainham Steel Select XI,104.75,AFC Pleasures,99.75
+2022-23,10,THE MIKES TINY PENISES,97.25,Kante Kepa Clean Sheet,100.5
+2022-23,10,Team Beige,122.75,Pun on a Footballers Name,78.75
+2022-23,10,The Cobras,82.75,UFOE FC,103.25
+2022-23,11,AFC Pleasures,150.5,Kane and Owl Albion,65.0
+2022-23,11,Kante Kepa Clean Sheet,60.25,The Cobras,66.75
+2022-23,11,Pun on a Footballers Name,123.75,#WinOrLose,112.5
+2022-23,11,THE MIKES TINY PENISES,62.75,Rainham Steel Select XI,109.25
+2022-23,11,UFOE FC,115.75,Team Beige,98.25
+2022-23,12,#WinOrLose,130.75,UFOE FC,101.0
+2022-23,12,Kane and Owl Albion,73.5,THE MIKES TINY PENISES,113.75
+2022-23,12,Pun on a Footballers Name,83.0,AFC Pleasures,90.25
+2022-23,12,Rainham Steel Select XI,96.0,Kante Kepa Clean Sheet,69.0
+2022-23,12,Team Beige,84.5,The Cobras,66.75
+2022-23,13,Kante Kepa Clean Sheet,52.25,Team Beige,62.5
+2022-23,13,Rainham Steel Select XI,117.25,Kane and Owl Albion,81.5
+2022-23,13,THE MIKES TINY PENISES,82.5,Pun on a Footballers Name,73.25
+2022-23,13,The Cobras,104.25,#WinOrLose,122.75
+2022-23,13,UFOE FC,66.0,AFC Pleasures,55.25
+2022-23,14,#WinOrLose,66.25,Team Beige,85.25
+2022-23,14,AFC Pleasures,81.25,The Cobras,141.0
+2022-23,14,Kane and Owl Albion,79.5,Kante Kepa Clean Sheet,89.25
+2022-23,14,Pun on a Footballers Name,121.75,Rainham Steel Select XI,127.75
+2022-23,14,UFOE FC,125.25,THE MIKES TINY PENISES,114.5
+2022-23,15,Kane and Owl Albion,69.25,Pun on a Footballers Name,103.5
+2022-23,15,Kante Kepa Clean Sheet,92.25,#WinOrLose,67.0
+2022-23,15,Rainham Steel Select XI,104.75,UFOE FC,90.75
+2022-23,15,Team Beige,95.5,AFC Pleasures,103.0
+2022-23,15,The Cobras,64.0,THE MIKES TINY PENISES,94.75
+2022-23,16,AFC Pleasures,76.75,#WinOrLose,95.5
+2022-23,16,Pun on a Footballers Name,117.25,Kante Kepa Clean Sheet,81.75
+2022-23,16,THE MIKES TINY PENISES,114.0,Team Beige,81.25
+2022-23,16,The Cobras,126.5,Rainham Steel Select XI,97.0
+2022-23,16,UFOE FC,97.0,Kane and Owl Albion,57.5
+2022-23,17,#WinOrLose,134.5,THE MIKES TINY PENISES,47.75
+2022-23,17,Kane and Owl Albion,111.25,The Cobras,51.0
+2022-23,17,Kante Kepa Clean Sheet,91.75,AFC Pleasures,128.75
+2022-23,17,Pun on a Footballers Name,134.0,UFOE FC,153.25
+2022-23,17,Team Beige,88.0,Rainham Steel Select XI,128.0
+2022-23,18,Rainham Steel Select XI,92.5,#WinOrLose,100.25
+2022-23,18,THE MIKES TINY PENISES,114.75,AFC Pleasures,58.25
+2022-23,18,Team Beige,97.25,Kane and Owl Albion,99.75
+2022-23,18,The Cobras,49.25,Pun on a Footballers Name,99.0
+2022-23,18,UFOE FC,94.0,Kante Kepa Clean Sheet,42.25
+2022-23,19,#WinOrLose,82.25,Kane and Owl Albion,109.5
+2022-23,19,AFC Pleasures,134.75,Rainham Steel Select XI,109.0
+2022-23,19,Kante Kepa Clean Sheet,90.75,THE MIKES TINY PENISES,76.25
+2022-23,19,Pun on a Footballers Name,65.5,Team Beige,99.5
+2022-23,19,UFOE FC,118.75,The Cobras,99.75
+2022-23,20,#WinOrLose,102.75,Pun on a Footballers Name,105.0
+2022-23,20,Kane and Owl Albion,101.75,AFC Pleasures,96.0
+2022-23,20,Rainham Steel Select XI,122.5,THE MIKES TINY PENISES,157.5
+2022-23,20,Team Beige,132.0,UFOE FC,145.5
+2022-23,20,The Cobras,91.5,Kante Kepa Clean Sheet,87.5
+2022-23,21,AFC Pleasures,83.5,Pun on a Footballers Name,107.5
+2022-23,21,Kante Kepa Clean Sheet,122.25,Rainham Steel Select XI,76.0
+2022-23,21,THE MIKES TINY PENISES,88.25,Kane and Owl Albion,117.5
+2022-23,21,The Cobras,64.0,Team Beige,90.25
+2022-23,21,UFOE FC,153.25,#WinOrLose,134.25
+2022-23,22,#WinOrLose,90.5,The Cobras,84.75
+2022-23,22,AFC Pleasures,93.5,UFOE FC,105.5
+2022-23,22,Kane and Owl Albion,58.75,Rainham Steel Select XI,123.0
+2022-23,22,Pun on a Footballers Name,118.0,THE MIKES TINY PENISES,126.5
+2022-23,22,Team Beige,85.5,Kante Kepa Clean Sheet,42.75
+2022-23,23,Kante Kepa Clean Sheet,91.25,Kane and Owl Albion,95.5
+2022-23,23,Rainham Steel Select XI,136.0,Pun on a Footballers Name,132.5
+2022-23,23,THE MIKES TINY PENISES,101.0,UFOE FC,100.5
+2022-23,23,Team Beige,163.75,#WinOrLose,102.75
+2022-23,23,The Cobras,65.25,AFC Pleasures,86.75
+2022-23,24,#WinOrLose,78.0,Kante Kepa Clean Sheet,87.75
+2022-23,24,AFC Pleasures,112.25,Team Beige,117.75
+2022-23,24,Pun on a Footballers Name,112.75,Kane and Owl Albion,70.5
+2022-23,24,THE MIKES TINY PENISES,90.25,The Cobras,62.75
+2022-23,24,UFOE FC,112.5,Rainham Steel Select XI,148.5
+2022-23,25,#WinOrLose,152.0,AFC Pleasures,104.5
+2022-23,25,Kane and Owl Albion,122.5,UFOE FC,141.25
+2022-23,25,Kante Kepa Clean Sheet,92.75,Pun on a Footballers Name,72.25
+2022-23,25,Rainham Steel Select XI,126.5,The Cobras,153.25
+2022-23,25,Team Beige,152.5,THE MIKES TINY PENISES,52.5
+2022-23,26,AFC Pleasures,125.75,Kante Kepa Clean Sheet,120.0
+2022-23,26,Rainham Steel Select XI,110.0,Team Beige,85.75
+2022-23,26,THE MIKES TINY PENISES,69.5,#WinOrLose,48.75
+2022-23,26,The Cobras,47.25,Kane and Owl Albion,92.75
+2022-23,26,UFOE FC,59.5,Pun on a Footballers Name,77.0
+2022-23,27,#WinOrLose,140.5,Rainham Steel Select XI,169.25
+2022-23,27,AFC Pleasures,148.25,THE MIKES TINY PENISES,118.5
+2022-23,27,Kane and Owl Albion,96.5,Team Beige,113.5
+2022-23,27,Kante Kepa Clean Sheet,154.75,UFOE FC,108.0
+2022-23,27,Pun on a Footballers Name,132.5,The Cobras,87.25
+2022-23,28,Kane and Owl Albion,91.75,#WinOrLose,105.0
+2022-23,28,Rainham Steel Select XI,142.5,AFC Pleasures,102.0
+2022-23,28,THE MIKES TINY PENISES,82.25,Kante Kepa Clean Sheet,77.5
+2022-23,28,Team Beige,69.5,Pun on a Footballers Name,85.25
+2022-23,28,The Cobras,34.75,UFOE FC,60.75
+2022-23,29,AFC Pleasures,153.5,Kane and Owl Albion,183.0
+2022-23,29,Kante Kepa Clean Sheet,202.75,The Cobras,109.0
+2022-23,29,Pun on a Footballers Name,161.5,#WinOrLose,138.5
+2022-23,29,THE MIKES TINY PENISES,224.5,Rainham Steel Select XI,148.0
+2022-23,29,UFOE FC,214.0,Team Beige,162.25
+2022-23,30,#WinOrLose,126.75,UFOE FC,121.25
+2022-23,30,Kane and Owl Albion,79.5,THE MIKES TINY PENISES,95.75
+2022-23,30,Pun on a Footballers Name,88.5,AFC Pleasures,76.0
+2022-23,30,Rainham Steel Select XI,82.0,Kante Kepa Clean Sheet,99.25
+2022-23,30,Team Beige,87.5,The Cobras,46.0
+2022-23,31,Kante Kepa Clean Sheet,107.75,Team Beige,131.5
+2022-23,31,Rainham Steel Select XI,122.5,Kane and Owl Albion,82.25
+2022-23,31,THE MIKES TINY PENISES,75.25,Pun on a Footballers Name,102.25
+2022-23,31,The Cobras,85.0,#WinOrLose,118.75
+2022-23,31,UFOE FC,110.0,AFC Pleasures,129.0
+2022-23,32,#WinOrLose,126.5,Team Beige,76.25
+2022-23,32,AFC Pleasures,78.5,The Cobras,64.5
+2022-23,32,Kane and Owl Albion,53.5,Kante Kepa Clean Sheet,100.0
+2022-23,32,Pun on a Footballers Name,114.5,Rainham Steel Select XI,87.25
+2022-23,32,UFOE FC,184.0,THE MIKES TINY PENISES,123.5
+2022-23,33,Kane and Owl Albion,87.0,Pun on a Footballers Name,73.75
+2022-23,33,Kante Kepa Clean Sheet,85.0,#WinOrLose,59.5
+2022-23,33,Rainham Steel Select XI,142.0,UFOE FC,128.5
+2022-23,33,Team Beige,83.5,AFC Pleasures,117.0
+2022-23,33,The Cobras,90.0,THE MIKES TINY PENISES,70.25
+2022-23,34,AFC Pleasures,160.0,#WinOrLose,157.25
+2022-23,34,Pun on a Footballers Name,140.5,Kante Kepa Clean Sheet,199.5
+2022-23,34,THE MIKES TINY PENISES,192.25,Team Beige,142.0
+2022-23,34,The Cobras,93.0,Rainham Steel Select XI,96.75
+2022-23,34,UFOE FC,101.0,Kane and Owl Albion,123.25
+2022-23,35,#WinOrLose,85.0,THE MIKES TINY PENISES,96.75
+2022-23,35,Kane and Owl Albion,93.25,The Cobras,35.0
+2022-23,35,Kante Kepa Clean Sheet,91.0,AFC Pleasures,99.0
+2022-23,35,Pun on a Footballers Name,116.0,UFOE FC,87.0
+2022-23,35,Team Beige,92.75,Rainham Steel Select XI,133.25
+2022-23,36,Rainham Steel Select XI,96.5,#WinOrLose,114.25
+2022-23,36,THE MIKES TINY PENISES,149.5,AFC Pleasures,58.0
+2022-23,36,Team Beige,141.25,Kane and Owl Albion,121.5
+2022-23,36,The Cobras,101.75,Pun on a Footballers Name,80.5
+2022-23,36,UFOE FC,148.25,Kante Kepa Clean Sheet,120.25
+2022-23,37,#WinOrLose,118.5,Kane and Owl Albion,131.25
+2022-23,37,AFC Pleasures,152.75,Rainham Steel Select XI,100.25
+2022-23,37,Kante Kepa Clean Sheet,105.25,THE MIKES TINY PENISES,155.75
+2022-23,37,Pun on a Footballers Name,79.25,Team Beige,87.75
+2022-23,37,UFOE FC,141.5,The Cobras,64.0
+2022-23,38,#WinOrLose,82.0,Pun on a Footballers Name,80.25
+2022-23,38,Kane and Owl Albion,91.25,AFC Pleasures,113.75
+2022-23,38,Rainham Steel Select XI,150.75,THE MIKES TINY PENISES,122.75
+2022-23,38,Team Beige,55.25,UFOE FC,92.0
+2022-23,38,The Cobras,76.75,Kante Kepa Clean Sheet,97.5
+2023-24,1,#WinOrLose,98.25,AFC Pleasures,101.25
+2023-24,1,Berge King,135.25,Rainham Steel Select XI,69.75
+2023-24,1,Kane and Owl Albion,82.75,The Cobras,70.75
+2023-24,1,Rapid Viennetta,83.25,Pun on a Footballers Name,100.25
+2023-24,1,THE MIKES TINY PENISES,104.75,UFOE FC,110.0
+2023-24,1,Team Beige,119.75,Kante Kepa Clean Sheet,79.25
+2023-24,2,AFC Pleasures,39.25,Kane and Owl Albion,102.75
+2023-24,2,Berge King,70.25,Rapid Viennetta,78.0
+2023-24,2,Kante Kepa Clean Sheet,68.0,The Cobras,119.25
+2023-24,2,Pun on a Footballers Name,90.5,Team Beige,97.25
+2023-24,2,Rainham Steel Select XI,85.0,THE MIKES TINY PENISES,72.5
+2023-24,2,UFOE FC,67.75,#WinOrLose,142.75
+2023-24,3,#WinOrLose,105.25,THE MIKES TINY PENISES,72.75
+2023-24,3,Kane and Owl Albion,102.0,UFOE FC,82.0
+2023-24,3,Kante Kepa Clean Sheet,108.75,AFC Pleasures,97.0
+2023-24,3,Rapid Viennetta,65.75,Rainham Steel Select XI,104.5
+2023-24,3,Team Beige,159.5,Berge King,56.5
+2023-24,3,The Cobras,73.75,Pun on a Footballers Name,90.5
+2023-24,4,Berge King,98.25,The Cobras,69.0
+2023-24,4,Pun on a Footballers Name,80.0,AFC Pleasures,111.0
+2023-24,4,Rainham Steel Select XI,113.75,#WinOrLose,98.5
+2023-24,4,Rapid Viennetta,94.25,Team Beige,111.0
+2023-24,4,THE MIKES TINY PENISES,67.75,Kane and Owl Albion,114.0
+2023-24,4,UFOE FC,107.0,Kante Kepa Clean Sheet,64.5
+2023-24,5,AFC Pleasures,61.5,Berge King,59.25
+2023-24,5,Kane and Owl Albion,101.5,#WinOrLose,56.5
+2023-24,5,Kante Kepa Clean Sheet,96.25,THE MIKES TINY PENISES,101.75
+2023-24,5,Pun on a Footballers Name,87.75,UFOE FC,51.5
+2023-24,5,Team Beige,91.5,Rainham Steel Select XI,135.5
+2023-24,5,The Cobras,45.0,Rapid Viennetta,126.75
+2023-24,6,#WinOrLose,55.75,Kante Kepa Clean Sheet,90.0
+2023-24,6,Berge King,105.5,UFOE FC,95.5
+2023-24,6,Rainham Steel Select XI,82.5,Kane and Owl Albion,105.25
+2023-24,6,Rapid Viennetta,131.25,AFC Pleasures,91.75
+2023-24,6,THE MIKES TINY PENISES,102.5,Pun on a Footballers Name,84.75
+2023-24,6,Team Beige,55.25,The Cobras,112.75
+2023-24,7,AFC Pleasures,114.75,Team Beige,122.25
+2023-24,7,Berge King,42.25,THE MIKES TINY PENISES,82.25
+2023-24,7,Kante Kepa Clean Sheet,94.25,Kane and Owl Albion,168.25
+2023-24,7,Pun on a Footballers Name,132.5,#WinOrLose,130.5
+2023-24,7,The Cobras,76.5,Rainham Steel Select XI,97.0
+2023-24,7,UFOE FC,96.25,Rapid Viennetta,103.75
+2023-24,8,#WinOrLose,103.25,Berge King,67.5
+2023-24,8,Kane and Owl Albion,78.25,Pun on a Footballers Name,118.75
+2023-24,8,Rainham Steel Select XI,106.5,Kante Kepa Clean Sheet,98.75
+2023-24,8,Rapid Viennetta,96.0,THE MIKES TINY PENISES,82.25
+2023-24,8,Team Beige,86.25,UFOE FC,59.5
+2023-24,8,The Cobras,63.5,AFC Pleasures,63.75
+2023-24,9,AFC Pleasures,79.25,Rainham Steel Select XI,57.5
+2023-24,9,Berge King,120.75,Kane and Owl Albion,109.75
+2023-24,9,Pun on a Footballers Name,115.25,Kante Kepa Clean Sheet,93.75
+2023-24,9,Rapid Viennetta,98.75,#WinOrLose,73.25
+2023-24,9,THE MIKES TINY PENISES,69.5,Team Beige,115.25
+2023-24,9,UFOE FC,93.0,The Cobras,81.75
+2023-24,10,AFC Pleasures,91.0,UFOE FC,85.0
+2023-24,10,Kane and Owl Albion,82.0,Rapid Viennetta,116.5
+2023-24,10,Kante Kepa Clean Sheet,125.0,Berge King,106.25
+2023-24,10,Rainham Steel Select XI,87.0,Pun on a Footballers Name,55.75
+2023-24,10,Team Beige,111.5,#WinOrLose,88.25
+2023-24,10,The Cobras,84.5,THE MIKES TINY PENISES,67.5
+2023-24,11,#WinOrLose,93.5,The Cobras,40.0
+2023-24,11,Berge King,70.25,Pun on a Footballers Name,92.5
+2023-24,11,Rapid Viennetta,92.25,Kante Kepa Clean Sheet,108.0
+2023-24,11,THE MIKES TINY PENISES,74.25,AFC Pleasures,68.5
+2023-24,11,Team Beige,76.25,Kane and Owl Albion,55.5
+2023-24,11,UFOE FC,49.25,Rainham Steel Select XI,80.0
+2023-24,12,AFC Pleasures,107.25,#WinOrLose,85.0
+2023-24,12,Kante Kepa Clean Sheet,59.0,Team Beige,99.5
+2023-24,12,Pun on a Footballers Name,106.25,Rapid Viennetta,94.5
+2023-24,12,Rainham Steel Select XI,68.5,Berge King,131.0
+2023-24,12,The Cobras,69.25,Kane and Owl Albion,62.0
+2023-24,12,UFOE FC,142.0,THE MIKES TINY PENISES,139.25
+2023-24,13,#WinOrLose,99.5,UFOE FC,104.0
+2023-24,13,Kane and Owl Albion,81.75,AFC Pleasures,54.25
+2023-24,13,Rapid Viennetta,95.25,Berge King,87.0
+2023-24,13,THE MIKES TINY PENISES,73.25,Rainham Steel Select XI,86.25
+2023-24,13,Team Beige,73.0,Pun on a Footballers Name,133.75
+2023-24,13,The Cobras,61.5,Kante Kepa Clean Sheet,121.75
+2023-24,14,AFC Pleasures,131.0,Kante Kepa Clean Sheet,54.0
+2023-24,14,Berge King,100.75,Team Beige,73.0
+2023-24,14,Pun on a Footballers Name,88.5,The Cobras,117.75
+2023-24,14,Rainham Steel Select XI,113.75,Rapid Viennetta,86.25
+2023-24,14,THE MIKES TINY PENISES,95.75,#WinOrLose,78.75
+2023-24,14,UFOE FC,93.75,Kane and Owl Albion,132.25
+2023-24,15,#WinOrLose,74.25,Rainham Steel Select XI,125.0
+2023-24,15,AFC Pleasures,118.5,Pun on a Footballers Name,121.5
+2023-24,15,Kane and Owl Albion,119.75,THE MIKES TINY PENISES,86.75
+2023-24,15,Kante Kepa Clean Sheet,84.5,UFOE FC,139.0
+2023-24,15,Team Beige,61.0,Rapid Viennetta,79.25
+2023-24,15,The Cobras,95.25,Berge King,104.5
+2023-24,16,#WinOrLose,84.75,Kane and Owl Albion,74.75
+2023-24,16,Berge King,72.0,AFC Pleasures,51.75
+2023-24,16,Rainham Steel Select XI,116.75,Team Beige,59.0
+2023-24,16,Rapid Viennetta,93.25,The Cobras,146.0
+2023-24,16,THE MIKES TINY PENISES,97.0,Kante Kepa Clean Sheet,51.75
+2023-24,16,UFOE FC,124.75,Pun on a Footballers Name,97.5
+2023-24,17,AFC Pleasures,89.5,Rapid Viennetta,107.75
+2023-24,17,Kane and Owl Albion,74.5,Rainham Steel Select XI,102.5
+2023-24,17,Kante Kepa Clean Sheet,99.75,#WinOrLose,71.0
+2023-24,17,Pun on a Footballers Name,103.0,THE MIKES TINY PENISES,117.75
+2023-24,17,The Cobras,98.25,Team Beige,57.0
+2023-24,17,UFOE FC,100.5,Berge King,128.5
+2023-24,18,#WinOrLose,107.75,Pun on a Footballers Name,92.25
+2023-24,18,Kane and Owl Albion,101.5,Kante Kepa Clean Sheet,54.0
+2023-24,18,Rainham Steel Select XI,66.5,The Cobras,87.0
+2023-24,18,Rapid Viennetta,90.25,UFOE FC,89.0
+2023-24,18,THE MIKES TINY PENISES,61.75,Berge King,76.75
+2023-24,18,Team Beige,83.25,AFC Pleasures,78.25
+2023-24,19,AFC Pleasures,117.25,The Cobras,83.5
+2023-24,19,Berge King,50.0,#WinOrLose,157.25
+2023-24,19,Kante Kepa Clean Sheet,66.0,Rainham Steel Select XI,77.0
+2023-24,19,Pun on a Footballers Name,124.0,Kane and Owl Albion,118.75
+2023-24,19,THE MIKES TINY PENISES,56.0,Rapid Viennetta,80.0
+2023-24,19,UFOE FC,91.5,Team Beige,137.25
+2023-24,20,#WinOrLose,96.0,Rapid Viennetta,136.25
+2023-24,20,Kane and Owl Albion,95.75,Berge King,58.25
+2023-24,20,Kante Kepa Clean Sheet,73.0,Pun on a Footballers Name,119.0
+2023-24,20,Rainham Steel Select XI,69.0,AFC Pleasures,80.25
+2023-24,20,Team Beige,135.25,THE MIKES TINY PENISES,85.75
+2023-24,20,The Cobras,72.75,UFOE FC,70.0
+2023-24,21,#WinOrLose,104.75,Team Beige,99.75
+2023-24,21,Berge King,131.5,Kante Kepa Clean Sheet,124.0
+2023-24,21,Pun on a Footballers Name,109.0,Rainham Steel Select XI,118.5
+2023-24,21,Rapid Viennetta,146.0,Kane and Owl Albion,112.0
+2023-24,21,THE MIKES TINY PENISES,107.25,The Cobras,85.0
+2023-24,21,UFOE FC,55.5,AFC Pleasures,64.0
+2023-24,22,AFC Pleasures,159.25,THE MIKES TINY PENISES,76.5
+2023-24,22,Kane and Owl Albion,104.25,Team Beige,94.0
+2023-24,22,Kante Kepa Clean Sheet,119.5,Rapid Viennetta,103.75
+2023-24,22,Pun on a Footballers Name,123.75,Berge King,85.0
+2023-24,22,Rainham Steel Select XI,88.75,UFOE FC,97.0
+2023-24,22,The Cobras,96.5,#WinOrLose,121.25
+2023-24,23,#WinOrLose,119.75,AFC Pleasures,140.25
+2023-24,23,Berge King,110.5,Rainham Steel Select XI,33.0
+2023-24,23,Kane and Owl Albion,83.5,The Cobras,94.25
+2023-24,23,Rapid Viennetta,132.5,Pun on a Footballers Name,79.25
+2023-24,23,THE MIKES TINY PENISES,68.25,UFOE FC,104.0
+2023-24,23,Team Beige,109.5,Kante Kepa Clean Sheet,70.0
+2023-24,24,AFC Pleasures,89.75,Kane and Owl Albion,148.75
+2023-24,24,Berge King,70.5,Rapid Viennetta,71.75
+2023-24,24,Kante Kepa Clean Sheet,87.25,The Cobras,155.5
+2023-24,24,Pun on a Footballers Name,93.75,Team Beige,98.25
+2023-24,24,Rainham Steel Select XI,130.25,THE MIKES TINY PENISES,115.25
+2023-24,24,UFOE FC,95.0,#WinOrLose,82.5
+2023-24,25,#WinOrLose,108.75,THE MIKES TINY PENISES,62.5
+2023-24,25,Kane and Owl Albion,127.25,UFOE FC,129.75
+2023-24,25,Kante Kepa Clean Sheet,155.0,AFC Pleasures,169.25
+2023-24,25,Rapid Viennetta,150.5,Rainham Steel Select XI,127.0
+2023-24,25,Team Beige,133.75,Berge King,76.5
+2023-24,25,The Cobras,72.0,Pun on a Footballers Name,157.75
+2023-24,26,Berge King,101.75,The Cobras,88.0
+2023-24,26,Pun on a Footballers Name,99.0,AFC Pleasures,131.75
+2023-24,26,Rainham Steel Select XI,59.5,#WinOrLose,45.75
+2023-24,26,Rapid Viennetta,73.5,Team Beige,128.0
+2023-24,26,THE MIKES TINY PENISES,54.25,Kane and Owl Albion,143.25
+2023-24,26,UFOE FC,64.25,Kante Kepa Clean Sheet,56.25
+2023-24,27,AFC Pleasures,64.75,Berge King,116.0
+2023-24,27,Kane and Owl Albion,155.75,#WinOrLose,94.5
+2023-24,27,Kante Kepa Clean Sheet,154.75,THE MIKES TINY PENISES,115.75
+2023-24,27,Pun on a Footballers Name,86.75,UFOE FC,71.5
+2023-24,27,Team Beige,105.25,Rainham Steel Select XI,89.75
+2023-24,27,The Cobras,129.75,Rapid Viennetta,131.0
+2023-24,28,#WinOrLose,69.5,Kante Kepa Clean Sheet,107.5
+2023-24,28,Berge King,74.5,UFOE FC,136.75
+2023-24,28,Rainham Steel Select XI,92.25,Kane and Owl Albion,116.5
+2023-24,28,Rapid Viennetta,85.75,AFC Pleasures,140.0
+2023-24,28,THE MIKES TINY PENISES,102.5,Pun on a Footballers Name,124.75
+2023-24,28,Team Beige,63.5,The Cobras,99.5
+2023-24,29,AFC Pleasures,46.5,Team Beige,25.0
+2023-24,29,Berge King,26.25,THE MIKES TINY PENISES,73.0
+2023-24,29,Kante Kepa Clean Sheet,52.5,Kane and Owl Albion,42.75
+2023-24,29,Pun on a Footballers Name,81.0,#WinOrLose,57.0
+2023-24,29,The Cobras,87.75,Rainham Steel Select XI,50.5
+2023-24,29,UFOE FC,33.0,Rapid Viennetta,44.25
+2023-24,30,#WinOrLose,55.75,Berge King,132.0
+2023-24,30,Kane and Owl Albion,34.25,Pun on a Footballers Name,103.75
+2023-24,30,Rainham Steel Select XI,125.0,Kante Kepa Clean Sheet,81.75
+2023-24,30,Rapid Viennetta,123.5,THE MIKES TINY PENISES,91.25
+2023-24,30,Team Beige,59.0,UFOE FC,81.5
+2023-24,30,The Cobras,85.5,AFC Pleasures,94.5
+2023-24,31,AFC Pleasures,99.25,Rainham Steel Select XI,119.5
+2023-24,31,Berge King,84.75,Kane and Owl Albion,63.5
+2023-24,31,Pun on a Footballers Name,125.5,Kante Kepa Clean Sheet,86.25
+2023-24,31,Rapid Viennetta,53.75,#WinOrLose,77.25
+2023-24,31,THE MIKES TINY PENISES,100.25,Team Beige,134.0
+2023-24,31,UFOE FC,96.5,The Cobras,92.5
+2023-24,32,AFC Pleasures,127.25,UFOE FC,103.5
+2023-24,32,Kane and Owl Albion,114.5,Rapid Viennetta,86.25
+2023-24,32,Kante Kepa Clean Sheet,139.75,Berge King,66.5
+2023-24,32,Rainham Steel Select XI,69.75,Pun on a Footballers Name,98.25
+2023-24,32,Team Beige,60.25,#WinOrLose,85.75
+2023-24,32,The Cobras,93.5,THE MIKES TINY PENISES,78.0
+2023-24,33,#WinOrLose,71.5,The Cobras,99.5
+2023-24,33,Berge King,98.5,Pun on a Footballers Name,83.75
+2023-24,33,Rapid Viennetta,144.5,Kante Kepa Clean Sheet,140.0
+2023-24,33,THE MIKES TINY PENISES,142.25,AFC Pleasures,110.25
+2023-24,33,Team Beige,55.75,Kane and Owl Albion,90.0
+2023-24,33,UFOE FC,73.5,Rainham Steel Select XI,83.75
+2023-24,34,AFC Pleasures,232.25,#WinOrLose,51.0
+2023-24,34,Kante Kepa Clean Sheet,82.75,Team Beige,140.25
+2023-24,34,Pun on a Footballers Name,180.5,Rapid Viennetta,232.25
+2023-24,34,Rainham Steel Select XI,156.25,Berge King,129.5
+2023-24,34,The Cobras,151.0,Kane and Owl Albion,237.75
+2023-24,34,UFOE FC,144.5,THE MIKES TINY PENISES,82.75
+2023-24,35,#WinOrLose,128.25,UFOE FC,101.5
+2023-24,35,Kane and Owl Albion,173.75,AFC Pleasures,135.0
+2023-24,35,Rapid Viennetta,79.5,Berge King,126.75
+2023-24,35,THE MIKES TINY PENISES,85.75,Rainham Steel Select XI,83.75
+2023-24,35,Team Beige,79.75,Pun on a Footballers Name,121.0
+2023-24,35,The Cobras,83.5,Kante Kepa Clean Sheet,65.25
+2023-24,36,AFC Pleasures,156.0,Kante Kepa Clean Sheet,70.5
+2023-24,36,Berge King,122.25,Team Beige,79.5
+2023-24,36,Pun on a Footballers Name,121.5,The Cobras,108.5
+2023-24,36,Rainham Steel Select XI,125.75,Rapid Viennetta,151.0
+2023-24,36,THE MIKES TINY PENISES,149.5,#WinOrLose,115.25
+2023-24,36,UFOE FC,48.0,Kane and Owl Albion,206.0
+2023-24,37,#WinOrLose,103.75,Rainham Steel Select XI,97.5
+2023-24,37,AFC Pleasures,160.5,Pun on a Footballers Name,146.0
+2023-24,37,Kane and Owl Albion,164.25,THE MIKES TINY PENISES,134.75
+2023-24,37,Kante Kepa Clean Sheet,123.0,UFOE FC,117.5
+2023-24,37,Team Beige,82.0,Rapid Viennetta,170.5
+2023-24,37,The Cobras,123.5,Berge King,157.25
+2023-24,38,#WinOrLose,89.75,Kane and Owl Albion,111.25
+2023-24,38,Berge King,117.0,AFC Pleasures,55.75
+2023-24,38,Rainham Steel Select XI,107.25,Team Beige,81.25
+2023-24,38,Rapid Viennetta,167.0,The Cobras,130.5
+2023-24,38,THE MIKES TINY PENISES,113.75,Kante Kepa Clean Sheet,108.5
+2023-24,38,UFOE FC,109.0,Pun on a Footballers Name,165.75
+2024-25,1,AFC Pleasures,89.75,Rainham Steel Select XI,119.25
+2024-25,1,Kante Kepa Clean Sheet,85.75,Kane and Owl Albion,77.25
+2024-25,1,Pun on a Footballers Name,90.75,#WinOrLose,75.75
+2024-25,1,Rapid Viennetta,99.75,UFOE FC,109.25
+2024-25,1,THE MIKES TINY PENISES,82.75,Team Beige,88.0
+2024-25,1,The Cobras,84.25,Berge King,85.25
+2024-25,2,#WinOrLose,127.5,Rapid Viennetta,95.25
+2024-25,2,Berge King,120.0,AFC Pleasures,50.5
+2024-25,2,Kane and Owl Albion,120.25,The Cobras,124.5
+2024-25,2,THE MIKES TINY PENISES,93.5,Pun on a Footballers Name,132.75
+2024-25,2,Team Beige,102.5,Kante Kepa Clean Sheet,72.5
+2024-25,2,UFOE FC,72.0,Rainham Steel Select XI,85.75
+2024-25,3,AFC Pleasures,129.25,Kane and Owl Albion,95.5
+2024-25,3,Pun on a Footballers Name,117.75,Team Beige,111.25
+2024-25,3,Rainham Steel Select XI,98.25,#WinOrLose,86.0
+2024-25,3,Rapid Viennetta,93.25,THE MIKES TINY PENISES,102.5
+2024-25,3,The Cobras,74.0,Kante Kepa Clean Sheet,57.5
+2024-25,3,UFOE FC,93.5,Berge King,89.25
+2024-25,4,#WinOrLose,106.75,Berge King,106.0
+2024-25,4,Kane and Owl Albion,113.5,UFOE FC,137.0
+2024-25,4,Kante Kepa Clean Sheet,90.25,AFC Pleasures,111.75
+2024-25,4,Pun on a Footballers Name,101.0,Rapid Viennetta,82.0
+2024-25,4,THE MIKES TINY PENISES,73.0,Rainham Steel Select XI,92.0
+2024-25,4,Team Beige,102.75,The Cobras,84.0
+2024-25,5,#WinOrLose,84.25,Kane and Owl Albion,77.25
+2024-25,5,AFC Pleasures,116.75,The Cobras,102.0
+2024-25,5,Berge King,142.25,THE MIKES TINY PENISES,118.0
+2024-25,5,Rainham Steel Select XI,118.25,Pun on a Footballers Name,135.25
+2024-25,5,Rapid Viennetta,113.25,Team Beige,92.25
+2024-25,5,UFOE FC,92.0,Kante Kepa Clean Sheet,102.25
+2024-25,6,Kante Kepa Clean Sheet,84.75,#WinOrLose,174.5
+2024-25,6,Pun on a Footballers Name,92.25,Berge King,94.0
+2024-25,6,Rapid Viennetta,105.75,Rainham Steel Select XI,85.0
+2024-25,6,THE MIKES TINY PENISES,113.75,Kane and Owl Albion,125.25
+2024-25,6,Team Beige,82.0,AFC Pleasures,76.0
+2024-25,6,The Cobras,60.25,UFOE FC,86.25
+2024-25,7,#WinOrLose,106.25,The Cobras,122.0
+2024-25,7,Berge King,97.5,Rapid Viennetta,117.5
+2024-25,7,Kane and Owl Albion,127.75,Pun on a Footballers Name,87.25
+2024-25,7,Rainham Steel Select XI,154.25,Team Beige,59.25
+2024-25,7,THE MIKES TINY PENISES,122.75,Kante Kepa Clean Sheet,87.25
+2024-25,7,UFOE FC,83.25,AFC Pleasures,66.0
+2024-25,8,AFC Pleasures,107.5,#WinOrLose,80.25
+2024-25,8,Pun on a Footballers Name,97.75,Kante Kepa Clean Sheet,90.75
+2024-25,8,Rainham Steel Select XI,89.0,Berge King,94.75
+2024-25,8,Rapid Viennetta,66.75,Kane and Owl Albion,87.0
+2024-25,8,Team Beige,110.75,UFOE FC,104.5
+2024-25,8,The Cobras,105.75,THE MIKES TINY PENISES,83.5
+2024-25,9,#WinOrLose,82.75,UFOE FC,81.0
+2024-25,9,Berge King,77.25,Team Beige,94.75
+2024-25,9,Kane and Owl Albion,88.25,Rainham Steel Select XI,123.5
+2024-25,9,Kante Kepa Clean Sheet,92.25,Rapid Viennetta,82.0
+2024-25,9,Pun on a Footballers Name,102.25,The Cobras,117.75
+2024-25,9,THE MIKES TINY PENISES,112.75,AFC Pleasures,94.5
+2024-25,10,AFC Pleasures,93.5,Pun on a Footballers Name,157.75
+2024-25,10,Berge King,79.5,Kane and Owl Albion,84.5
+2024-25,10,Rainham Steel Select XI,87.0,Kante Kepa Clean Sheet,59.25
+2024-25,10,Rapid Viennetta,98.0,The Cobras,106.0
+2024-25,10,Team Beige,108.75,#WinOrLose,95.75
+2024-25,10,UFOE FC,75.75,THE MIKES TINY PENISES,93.25
+2024-25,11,Kane and Owl Albion,110.0,Team Beige,94.75
+2024-25,11,Kante Kepa Clean Sheet,111.75,Berge King,108.25
+2024-25,11,Pun on a Footballers Name,151.75,UFOE FC,106.75
+2024-25,11,Rapid Viennetta,57.5,AFC Pleasures,86.5
+2024-25,11,THE MIKES TINY PENISES,129.75,#WinOrLose,94.25
+2024-25,11,The Cobras,73.5,Rainham Steel Select XI,108.75
+2024-25,12,#WinOrLose,94.75,Pun on a Footballers Name,101.25
+2024-25,12,Berge King,106.75,The Cobras,65.75
+2024-25,12,Kane and Owl Albion,97.25,Kante Kepa Clean Sheet,89.75
+2024-25,12,Rainham Steel Select XI,162.75,AFC Pleasures,107.75
+2024-25,12,Team Beige,52.5,THE MIKES TINY PENISES,95.25
+2024-25,12,UFOE FC,116.5,Rapid Viennetta,98.5
+2024-25,13,AFC Pleasures,89.75,Berge King,62.0
+2024-25,13,Kante Kepa Clean Sheet,59.0,Team Beige,113.5
+2024-25,13,Pun on a Footballers Name,114.75,THE MIKES TINY PENISES,126.25
+2024-25,13,Rainham Steel Select XI,151.0,UFOE FC,116.0
+2024-25,13,Rapid Viennetta,77.75,#WinOrLose,106.5
+2024-25,13,The Cobras,105.5,Kane and Owl Albion,84.0
+2024-25,14,#WinOrLose,107.75,Rainham Steel Select XI,87.0
+2024-25,14,Berge King,112.0,UFOE FC,126.0
+2024-25,14,Kane and Owl Albion,101.25,AFC Pleasures,97.75
+2024-25,14,Kante Kepa Clean Sheet,108.75,The Cobras,86.75
+2024-25,14,THE MIKES TINY PENISES,116.25,Rapid Viennetta,99.0
+2024-25,14,Team Beige,71.25,Pun on a Footballers Name,120.5
+2024-25,15,AFC Pleasures,91.75,Kante Kepa Clean Sheet,66.25
+2024-25,15,Berge King,101.5,#WinOrLose,116.25
+2024-25,15,Rainham Steel Select XI,79.5,THE MIKES TINY PENISES,88.0
+2024-25,15,Rapid Viennetta,119.25,Pun on a Footballers Name,117.25
+2024-25,15,The Cobras,42.25,Team Beige,74.5
+2024-25,15,UFOE FC,86.75,Kane and Owl Albion,50.75
+2024-25,16,Kane and Owl Albion,67.5,#WinOrLose,102.5
+2024-25,16,Kante Kepa Clean Sheet,82.75,UFOE FC,88.75
+2024-25,16,Pun on a Footballers Name,157.25,Rainham Steel Select XI,119.25
+2024-25,16,THE MIKES TINY PENISES,77.75,Berge King,94.0
+2024-25,16,Team Beige,117.5,Rapid Viennetta,96.0
+2024-25,16,The Cobras,76.75,AFC Pleasures,93.0
+2024-25,17,#WinOrLose,66.0,Kante Kepa Clean Sheet,120.75
+2024-25,17,AFC Pleasures,81.25,Team Beige,82.25
+2024-25,17,Berge King,86.75,Pun on a Footballers Name,172.75
+2024-25,17,Kane and Owl Albion,67.5,THE MIKES TINY PENISES,132.25
+2024-25,17,Rainham Steel Select XI,135.25,Rapid Viennetta,109.5
+2024-25,17,UFOE FC,106.25,The Cobras,126.0
+2024-25,18,AFC Pleasures,96.0,UFOE FC,88.5
+2024-25,18,Kante Kepa Clean Sheet,102.5,THE MIKES TINY PENISES,90.75
+2024-25,18,Pun on a Footballers Name,72.0,Kane and Owl Albion,94.25
+2024-25,18,Rapid Viennetta,96.25,Berge King,97.0
+2024-25,18,Team Beige,84.25,Rainham Steel Select XI,117.5
+2024-25,18,The Cobras,134.75,#WinOrLose,106.0
+2024-25,19,#WinOrLose,124.0,AFC Pleasures,91.75
+2024-25,19,Berge King,106.75,Rainham Steel Select XI,82.5
+2024-25,19,Kane and Owl Albion,130.5,Rapid Viennetta,92.5
+2024-25,19,Kante Kepa Clean Sheet,109.75,Pun on a Footballers Name,96.75
+2024-25,19,THE MIKES TINY PENISES,116.75,The Cobras,110.75
+2024-25,19,UFOE FC,117.5,Team Beige,82.5
+2024-25,20,AFC Pleasures,131.25,THE MIKES TINY PENISES,129.75
+2024-25,20,Rainham Steel Select XI,66.75,Kane and Owl Albion,111.75
+2024-25,20,Rapid Viennetta,94.5,Kante Kepa Clean Sheet,89.25
+2024-25,20,Team Beige,95.0,Berge King,68.25
+2024-25,20,The Cobras,137.5,Pun on a Footballers Name,99.25
+2024-25,20,UFOE FC,116.5,#WinOrLose,122.75
+2024-25,21,#WinOrLose,89.25,Team Beige,111.0
+2024-25,21,Kane and Owl Albion,101.75,Berge King,60.0
+2024-25,21,Kante Kepa Clean Sheet,76.5,Rainham Steel Select XI,99.25
+2024-25,21,Pun on a Footballers Name,162.25,AFC Pleasures,137.0
+2024-25,21,THE MIKES TINY PENISES,138.75,UFOE FC,119.5
+2024-25,21,The Cobras,110.25,Rapid Viennetta,87.5
+2024-25,22,#WinOrLose,144.0,THE MIKES TINY PENISES,125.25
+2024-25,22,AFC Pleasures,67.0,Rapid Viennetta,117.5
+2024-25,22,Berge King,68.75,Kante Kepa Clean Sheet,133.75
+2024-25,22,Rainham Steel Select XI,108.25,The Cobras,110.0
+2024-25,22,Team Beige,150.75,Kane and Owl Albion,73.0
+2024-25,22,UFOE FC,76.5,Pun on a Footballers Name,117.25
+2024-25,23,AFC Pleasures,97.5,Rainham Steel Select XI,55.25
+2024-25,23,Kante Kepa Clean Sheet,74.25,Kane and Owl Albion,101.0
+2024-25,23,Pun on a Footballers Name,161.0,#WinOrLose,88.5
+2024-25,23,Rapid Viennetta,99.25,UFOE FC,96.75
+2024-25,23,THE MIKES TINY PENISES,98.25,Team Beige,95.0
+2024-25,23,The Cobras,138.0,Berge King,88.75
+2024-25,24,#WinOrLose,157.25,Rapid Viennetta,113.25
+2024-25,24,Berge King,123.5,AFC Pleasures,81.75
+2024-25,24,Kane and Owl Albion,94.0,The Cobras,126.75
+2024-25,24,THE MIKES TINY PENISES,150.5,Pun on a Footballers Name,103.5
+2024-25,24,Team Beige,94.75,Kante Kepa Clean Sheet,112.0
+2024-25,24,UFOE FC,116.0,Rainham Steel Select XI,88.75
+2024-25,25,AFC Pleasures,80.0,Kane and Owl Albion,138.75
+2024-25,25,Pun on a Footballers Name,84.25,Team Beige,107.75
+2024-25,25,Rainham Steel Select XI,137.75,#WinOrLose,121.25
+2024-25,25,Rapid Viennetta,69.5,THE MIKES TINY PENISES,87.25
+2024-25,25,The Cobras,99.75,Kante Kepa Clean Sheet,106.25
+2024-25,25,UFOE FC,98.0,Berge King,116.0
+2024-25,26,#WinOrLose,105.75,Berge King,112.25
+2024-25,26,Kane and Owl Albion,69.0,UFOE FC,116.75
+2024-25,26,Kante Kepa Clean Sheet,83.0,AFC Pleasures,116.5
+2024-25,26,Pun on a Footballers Name,100.25,Rapid Viennetta,110.25
+2024-25,26,THE MIKES TINY PENISES,105.25,Rainham Steel Select XI,109.75
+2024-25,26,Team Beige,101.25,The Cobras,93.5
+2024-25,27,#WinOrLose,119.5,Kane and Owl Albion,87.0
+2024-25,27,AFC Pleasures,105.0,The Cobras,73.75
+2024-25,27,Berge King,111.75,THE MIKES TINY PENISES,77.75
+2024-25,27,Rainham Steel Select XI,120.0,Pun on a Footballers Name,84.5
+2024-25,27,Rapid Viennetta,133.0,Team Beige,118.25
+2024-25,27,UFOE FC,113.75,Kante Kepa Clean Sheet,74.5
+2024-25,28,Kante Kepa Clean Sheet,79.5,#WinOrLose,94.5
+2024-25,28,Pun on a Footballers Name,122.5,Berge King,62.25
+2024-25,28,Rapid Viennetta,93.25,Rainham Steel Select XI,93.5
+2024-25,28,THE MIKES TINY PENISES,104.5,Kane and Owl Albion,101.0
+2024-25,28,Team Beige,106.5,AFC Pleasures,126.75
+2024-25,28,The Cobras,105.0,UFOE FC,139.5
+2024-25,29,#WinOrLose,113.25,The Cobras,83.5
+2024-25,29,Berge King,62.75,Rapid Viennetta,88.5
+2024-25,29,Kane and Owl Albion,68.0,Pun on a Footballers Name,119.0
+2024-25,29,Rainham Steel Select XI,57.75,Team Beige,100.75
+2024-25,29,THE MIKES TINY PENISES,65.0,Kante Kepa Clean Sheet,73.5
+2024-25,29,UFOE FC,120.5,AFC Pleasures,94.5
+2024-25,30,AFC Pleasures,110.0,#WinOrLose,121.25
+2024-25,30,Pun on a Footballers Name,86.5,Kante Kepa Clean Sheet,83.5
+2024-25,30,Rainham Steel Select XI,106.5,Berge King,118.0
+2024-25,30,Rapid Viennetta,68.0,Kane and Owl Albion,113.75
+2024-25,30,Team Beige,106.25,UFOE FC,80.75
+2024-25,30,The Cobras,51.25,THE MIKES TINY PENISES,108.0
+2024-25,31,#WinOrLose,106.75,UFOE FC,77.25
+2024-25,31,Berge King,94.5,Team Beige,97.0
+2024-25,31,Kane and Owl Albion,99.0,Rainham Steel Select XI,74.25
+2024-25,31,Kante Kepa Clean Sheet,114.5,Rapid Viennetta,125.75
+2024-25,31,Pun on a Footballers Name,97.75,The Cobras,112.75
+2024-25,31,THE MIKES TINY PENISES,112.5,AFC Pleasures,71.75
+2024-25,32,AFC Pleasures,90.75,Pun on a Footballers Name,135.0
+2024-25,32,Berge King,136.5,Kane and Owl Albion,106.25
+2024-25,32,Rainham Steel Select XI,139.0,Kante Kepa Clean Sheet,104.5
+2024-25,32,Rapid Viennetta,134.0,The Cobras,56.0
+2024-25,32,Team Beige,69.75,#WinOrLose,143.0
+2024-25,32,UFOE FC,81.75,THE MIKES TINY PENISES,129.75
+2024-25,33,Kane and Owl Albion,124.0,Team Beige,103.0
+2024-25,33,Kante Kepa Clean Sheet,121.5,Berge King,131.0
+2024-25,33,Pun on a Footballers Name,84.25,UFOE FC,70.25
+2024-25,33,Rapid Viennetta,113.5,AFC Pleasures,192.25
+2024-25,33,THE MIKES TINY PENISES,98.0,#WinOrLose,162.75
+2024-25,33,The Cobras,136.25,Rainham Steel Select XI,102.75
+2024-25,34,#WinOrLose,85.0,Pun on a Footballers Name,137.5
+2024-25,34,Berge King,115.75,The Cobras,106.25
+2024-25,34,Kane and Owl Albion,106.75,Kante Kepa Clean Sheet,94.25
+2024-25,34,Rainham Steel Select XI,105.5,AFC Pleasures,137.75
+2024-25,34,Team Beige,83.75,THE MIKES TINY PENISES,83.25
+2024-25,34,UFOE FC,78.5,Rapid Viennetta,98.0
+2024-25,35,AFC Pleasures,104.25,Berge King,78.75
+2024-25,35,Kante Kepa Clean Sheet,89.75,Team Beige,70.25
+2024-25,35,Pun on a Footballers Name,94.0,THE MIKES TINY PENISES,88.25
+2024-25,35,Rainham Steel Select XI,109.0,UFOE FC,87.0
+2024-25,35,Rapid Viennetta,42.5,#WinOrLose,76.75
+2024-25,35,The Cobras,87.5,Kane and Owl Albion,94.75
+2024-25,36,#WinOrLose,86.75,Rainham Steel Select XI,105.25
+2024-25,36,Berge King,76.5,UFOE FC,100.0
+2024-25,36,Kane and Owl Albion,111.0,AFC Pleasures,110.5
+2024-25,36,Kante Kepa Clean Sheet,75.25,The Cobras,137.25
+2024-25,36,THE MIKES TINY PENISES,78.75,Rapid Viennetta,89.75
+2024-25,36,Team Beige,82.75,Pun on a Footballers Name,79.0
+2024-25,37,AFC Pleasures,94.25,Kante Kepa Clean Sheet,35.0
+2024-25,37,Berge King,122.0,#WinOrLose,142.75
+2024-25,37,Rainham Steel Select XI,71.75,THE MIKES TINY PENISES,92.5
+2024-25,37,Rapid Viennetta,99.5,Pun on a Footballers Name,78.5
+2024-25,37,The Cobras,73.25,Team Beige,70.5
+2024-25,37,UFOE FC,76.5,Kane and Owl Albion,108.25
+2024-25,38,Kane and Owl Albion,94.25,#WinOrLose,61.5
+2024-25,38,Kante Kepa Clean Sheet,114.25,UFOE FC,110.75
+2024-25,38,Pun on a Footballers Name,145.25,Rainham Steel Select XI,109.25
+2024-25,38,THE MIKES TINY PENISES,79.25,Berge King,103.25
+2024-25,38,Team Beige,80.5,Rapid Viennetta,77.75
+2024-25,38,The Cobras,117.5,AFC Pleasures,84.75
 2025-26,1,#WinOrLose,61.75,Team Beige,98.0
-2025-26,1,UFOE FC,101.75,Kane and Owl Albion,99.0
+2025-26,1,AFC Pleasures,129.5,The Cobras,66.5
 2025-26,1,Berge King,123.25,Pun on a Footballers Name,134.5
-2025-26,2,Rainham Steel Select XI,68.5,AFC Pleasures,68.25
+2025-26,1,Kante Kepa Clean Sheet,68.75,Rainham Steel Select XI,83.75
+2025-26,1,THE MIKES TINY PENISES,99.5,Rapid Viennetta,153.5
+2025-26,1,UFOE FC,101.75,Kane and Owl Albion,99.0
+2025-26,2,Kane and Owl Albion,100.5,Pun on a Footballers Name,98.75
 2025-26,2,Kante Kepa Clean Sheet,63.5,THE MIKES TINY PENISES,125.75
-2025-26,2,The Cobras,94.25,#WinOrLose,104.25
+2025-26,2,Rainham Steel Select XI,68.5,AFC Pleasures,68.25
 2025-26,2,Rapid Viennetta,97.25,UFOE FC,101.0
 2025-26,2,Team Beige,64.5,Berge King,100.0
-2025-26,2,Kane and Owl Albion,100.5,Pun on a Footballers Name,98.75
-2025-26,3,THE MIKES TINY PENISES,92.0,Rainham Steel Select XI,45.75
+2025-26,2,The Cobras,94.25,#WinOrLose,104.25
 2025-26,3,#WinOrLose,120.75,AFC Pleasures,120.0
-2025-26,3,UFOE FC,85.75,Kante Kepa Clean Sheet,95.0
 2025-26,3,Berge King,102.25,The Cobras,89.5
-2025-26,3,Pun on a Footballers Name,80.75,Rapid Viennetta,57.25
 2025-26,3,Kane and Owl Albion,77.25,Team Beige,72.25
-2025-26,4,Kante Kepa Clean Sheet,102.0,Pun on a Footballers Name,108.75
+2025-26,3,Pun on a Footballers Name,80.75,Rapid Viennetta,57.25
+2025-26,3,THE MIKES TINY PENISES,92.0,Rainham Steel Select XI,45.75
+2025-26,3,UFOE FC,85.75,Kante Kepa Clean Sheet,95.0
 2025-26,4,AFC Pleasures,126.75,Berge King,101.25
+2025-26,4,Kante Kepa Clean Sheet,102.0,Pun on a Footballers Name,108.75
 2025-26,4,Rainham Steel Select XI,80.5,#WinOrLose,93.25
 2025-26,4,Rapid Viennetta,104.0,Team Beige,79.25
 2025-26,4,THE MIKES TINY PENISES,67.5,UFOE FC,86.0
 2025-26,4,The Cobras,92.5,Kane and Owl Albion,120.25
-2025-26,5,Pun on a Footballers Name,57.25,THE MIKES TINY PENISES,127.0
 2025-26,5,Berge King,67.25,#WinOrLose,54.5
 2025-26,5,Kane and Owl Albion,110.75,AFC Pleasures,100.75
+2025-26,5,Pun on a Footballers Name,57.25,THE MIKES TINY PENISES,127.0
 2025-26,5,Rapid Viennetta,104.25,The Cobras,77.75
 2025-26,5,Team Beige,84.5,Kante Kepa Clean Sheet,88.75
-2025-26,5,UFOE FC,63.75,Rainham Steel Select XI,74.5
-2025-26,6,UFOE FC,100.25,Pun on a Footballers Name,72.25
+2025-26,5,UFOE FC,63.75,Rainham Steel Select XI,74.25
 2025-26,6,#WinOrLose,80.5,Kane and Owl Albion,95.5
 2025-26,6,AFC Pleasures,124.75,Rapid Viennetta,95.75
 2025-26,6,Kante Kepa Clean Sheet,127.25,The Cobras,126.5
 2025-26,6,Rainham Steel Select XI,92.5,Berge King,65.25
 2025-26,6,THE MIKES TINY PENISES,69.0,Team Beige,98.5
-2025-26,7,Pun on a Footballers Name,118.5,Rainham Steel Select XI,95.5
+2025-26,6,UFOE FC,100.25,Pun on a Footballers Name,72.25
 2025-26,7,Kane and Owl Albion,104.5,Berge King,98.75
 2025-26,7,Kante Kepa Clean Sheet,77.75,AFC Pleasures,89.25
+2025-26,7,Pun on a Footballers Name,118.5,Rainham Steel Select XI,95.5
 2025-26,7,Rapid Viennetta,98.5,#WinOrLose,146.25
 2025-26,7,Team Beige,95.0,UFOE FC,57.75
 2025-26,7,The Cobras,105.0,THE MIKES TINY PENISES,81.5
-2025-26,8,Pun on a Footballers Name,151.25,Team Beige,114.25
 2025-26,8,#WinOrLose,95.25,Kante Kepa Clean Sheet,113.0
 2025-26,8,Berge King,79.25,Rapid Viennetta,81.0
+2025-26,8,Pun on a Footballers Name,151.25,Team Beige,114.25
 2025-26,8,Rainham Steel Select XI,133.0,Kane and Owl Albion,130.25
 2025-26,8,THE MIKES TINY PENISES,78.0,AFC Pleasures,93.5
 2025-26,8,UFOE FC,70.0,The Cobras,115.0
-2025-26,9,The Cobras,147.75,Pun on a Footballers Name,81.25
 2025-26,9,AFC Pleasures,79.5,UFOE FC,124.5
 2025-26,9,Kante Kepa Clean Sheet,74.75,Berge King,86.5
 2025-26,9,Rapid Viennetta,58.5,Kane and Owl Albion,99.25
 2025-26,9,THE MIKES TINY PENISES,82.0,#WinOrLose,85.5
 2025-26,9,Team Beige,94.75,Rainham Steel Select XI,117.0
-2025-26,10,Pun on a Footballers Name,97.25,AFC Pleasures,119.0
+2025-26,9,The Cobras,147.75,Pun on a Footballers Name,81.25
 2025-26,10,Berge King,88.0,THE MIKES TINY PENISES,35.5
 2025-26,10,Kane and Owl Albion,124.0,Kante Kepa Clean Sheet,77.25
+2025-26,10,Pun on a Footballers Name,97.25,AFC Pleasures,119.0
 2025-26,10,Rainham Steel Select XI,103.25,Rapid Viennetta,76.75
 2025-26,10,Team Beige,76.75,The Cobras,123.0
 2025-26,10,UFOE FC,107.0,#WinOrLose,135.5
 2025-26,11,#WinOrLose,128.5,Pun on a Footballers Name,116.0
 2025-26,11,AFC Pleasures,95.75,Team Beige,73.0
-2025-26,11,Kante Kepa Clean Sheet,114.0,Rapid Viennetta,114.0
+2025-26,11,Kante Kepa Clean Sheet,114.0,Rapid Viennetta,76.25
 2025-26,11,THE MIKES TINY PENISES,101.0,Kane and Owl Albion,58.5
 2025-26,11,The Cobras,95.0,Rainham Steel Select XI,119.5
 2025-26,11,UFOE FC,111.75,Berge King,36.75
-2025-26,12,Pun on a Footballers Name,95.75,Berge King,121.0
 2025-26,12,Kane and Owl Albion,84.75,UFOE FC,108.0
+2025-26,12,Pun on a Footballers Name,95.75,Berge King,121.0
 2025-26,12,Rainham Steel Select XI,104.0,Kante Kepa Clean Sheet,102.5
 2025-26,12,Rapid Viennetta,153.5,THE MIKES TINY PENISES,95.0
 2025-26,12,Team Beige,75.0,#WinOrLose,73.5
 2025-26,12,The Cobras,82.25,AFC Pleasures,114.25
-2025-26,13,Pun on a Footballers Name,110.25,Kane and Owl Albion,112.75
-2025-26,13,#WinOrLose,63.75,The Cobras,83.75
+2025-26,13,#WinOrLose,63.5,The Cobras,83.75
 2025-26,13,AFC Pleasures,72.75,Rainham Steel Select XI,141.0
 2025-26,13,Berge King,60.5,Team Beige,96.75
+2025-26,13,Pun on a Footballers Name,110.5,Kane and Owl Albion,112.75
 2025-26,13,THE MIKES TINY PENISES,90.75,Kante Kepa Clean Sheet,99.5
 2025-26,13,UFOE FC,92.75,Rapid Viennetta,79.0
-2025-26,14,Rainham Steel Select XI,152.25,THE MIKES TINY PENISES,61.5
-2025-26,14,Kante Kepa Clean Sheet,79.0,UFOE FC,71.5
 2025-26,14,AFC Pleasures,110.25,#WinOrLose,74.25
-2025-26,14,The Cobras,97.5,Berge King,105.25
+2025-26,14,Kante Kepa Clean Sheet,79.0,UFOE FC,71.5
+2025-26,14,Rainham Steel Select XI,152.25,THE MIKES TINY PENISES,61.5
 2025-26,14,Rapid Viennetta,135.25,Pun on a Footballers Name,92.25
 2025-26,14,Team Beige,80.5,Kane and Owl Albion,84.0
+2025-26,14,The Cobras,97.75,Berge King,105.25
 2025-26,15,#WinOrLose,125.75,Rainham Steel Select XI,98.25
-2025-26,15,UFOE FC,101.5,THE MIKES TINY PENISES,126.5
 2025-26,15,Berge King,98.5,AFC Pleasures,100.5
-2025-26,15,Pun on a Footballers Name,157.25,Kante Kepa Clean Sheet,94.25
 2025-26,15,Kane and Owl Albion,116.0,The Cobras,123.0
+2025-26,15,Pun on a Footballers Name,157.25,Kante Kepa Clean Sheet,94.25
 2025-26,15,Team Beige,107.0,Rapid Viennetta,122.0
-2025-26,16,Rainham Steel Select XI,122.0,UFOE FC,45.5
+2025-26,15,UFOE FC,101.5,THE MIKES TINY PENISES,126.5
 2025-26,16,#WinOrLose,113.0,Berge King,101.0
-2025-26,16,THE MIKES TINY PENISES,91.75,Pun on a Footballers Name,146.0
 2025-26,16,AFC Pleasures,120.0,Kane and Owl Albion,90.0
 2025-26,16,Kante Kepa Clean Sheet,74.0,Team Beige,103.0
+2025-26,16,Rainham Steel Select XI,122.0,UFOE FC,45.5
+2025-26,16,THE MIKES TINY PENISES,91.75,Pun on a Footballers Name,146.0
 2025-26,16,The Cobras,90.0,Rapid Viennetta,62.75
 2025-26,17,Berge King,108.0,Rainham Steel Select XI,88.75
-2025-26,17,Pun on a Footballers Name,86.0,UFOE FC,106.75
 2025-26,17,Kane and Owl Albion,143.75,#WinOrLose,116.25
-2025-26,17,Team Beige,59.25,THE MIKES TINY PENISES,108.75
+2025-26,17,Pun on a Footballers Name,86.0,UFOE FC,106.75
 2025-26,17,Rapid Viennetta,110.5,AFC Pleasures,94.75
+2025-26,17,Team Beige,59.25,THE MIKES TINY PENISES,108.75
 2025-26,17,The Cobras,69.5,Kante Kepa Clean Sheet,87.0
-2025-26,18,Rainham Steel Select XI,109.75,Pun on a Footballers Name,109.0
-2025-26,18,Berge King,77.0,Kane and Owl Albion,101.5
-2025-26,18,UFOE FC,112.75,Team Beige,78.5
 2025-26,18,#WinOrLose,150.75,Rapid Viennetta,133.75
-2025-26,18,THE MIKES TINY PENISES,122.5,The Cobras,72.5
 2025-26,18,AFC Pleasures,109.25,Kante Kepa Clean Sheet,102.25
+2025-26,18,Berge King,77.0,Kane and Owl Albion,101.5
+2025-26,18,Rainham Steel Select XI,109.75,Pun on a Footballers Name,109.0
+2025-26,18,THE MIKES TINY PENISES,122.5,The Cobras,72.5
+2025-26,18,UFOE FC,112.75,Team Beige,78.5
+2025-26,19,AFC Pleasures,124.25,THE MIKES TINY PENISES,132.25
 2025-26,19,Kane and Owl Albion,69.75,Rainham Steel Select XI,125.0
-2025-26,19,Team Beige,78.5,Pun on a Footballers Name,103.5
-2025-26,19,Rapid Viennetta,113.75,Berge King,95.5
-2025-26,19,The Cobras,124.0,UFOE FC,90.75
 2025-26,19,Kante Kepa Clean Sheet,77.75,#WinOrLose,78.25
-2025-26,19,AFC Pleasures,125.25,THE MIKES TINY PENISES,132.25
-2025-26,20,Rainham Steel Select XI,106.5,Team Beige,52.5
+2025-26,19,Rapid Viennetta,113.75,Berge King,95.5
+2025-26,19,Team Beige,78.75,Pun on a Footballers Name,103.5
+2025-26,19,The Cobras,124.0,UFOE FC,90.75
+2025-26,20,#WinOrLose,101.75,THE MIKES TINY PENISES,136.0
+2025-26,20,Berge King,93.75,Kante Kepa Clean Sheet,120.75
 2025-26,20,Kane and Owl Albion,87.75,Rapid Viennetta,91.0
 2025-26,20,Pun on a Footballers Name,98.0,The Cobras,97.75
-2025-26,20,Berge King,93.75,Kante Kepa Clean Sheet,120.75
+2025-26,20,Rainham Steel Select XI,106.5,Team Beige,52.5
 2025-26,20,UFOE FC,86.25,AFC Pleasures,46.0
-2025-26,20,#WinOrLose,101.75,THE MIKES TINY PENISES,136.0
-2025-26,21,Rapid Viennetta,91.5,Rainham Steel Select XI,96.0
-2025-26,21,The Cobras,102.25,Team Beige,63.0
-2025-26,21,Kante Kepa Clean Sheet,142.0,Kane and Owl Albion,99.5
-2025-26,21,AFC Pleasures,162.0,Pun on a Footballers Name,140.75
-2025-26,21,THE MIKES TINY PENISES,77.75,Berge King,76.5
 2025-26,21,#WinOrLose,107.0,UFOE FC,104.5
-2025-26,22,Rainham Steel Select XI,102.25,The Cobras,94.25
-2025-26,22,Rapid Viennetta,96.25,Kante Kepa Clean Sheet,92.75
+2025-26,21,AFC Pleasures,162.0,Pun on a Footballers Name,140.75
+2025-26,21,Kante Kepa Clean Sheet,142.0,Kane and Owl Albion,99.5
+2025-26,21,Rapid Viennetta,91.5,Rainham Steel Select XI,96.0
+2025-26,21,THE MIKES TINY PENISES,77.75,Berge King,76.5
+2025-26,21,The Cobras,102.25,Team Beige,63.0
+2025-26,22,Berge King,98.5,UFOE FC,92.25
+2025-26,22,Kane and Owl Albion,108.75,THE MIKES TINY PENISES,99.0
+2025-26,22,Pun on a Footballers Name,110.75,#WinOrLose,96.0
+2025-26,22,Rainham Steel Select XI,102.25,The Cobras,95.25
+2025-26,22,Rapid Viennetta,96.25,Kante Kepa Clean Sheet,93.75
 2025-26,22,Team Beige,89.75,AFC Pleasures,65.25
-2025-26,22,Kane and Owl Albion,108.75,THE MIKES TINY PENISES,99.5
-2025-26,22,Pun on a Footballers Name,110.5,#WinOrLose,96.0
-2025-26,22,Berge King,97.5,UFOE FC,90.25
-2025-26,23,Kante Kepa Clean Sheet,91.5,Rainham Steel Select XI,94.25
-2025-26,23,AFC Pleasures,88.0,The Cobras,81.25
-2025-26,23,THE MIKES TINY PENISES,100.75,Rapid Viennetta,119.75
 2025-26,23,#WinOrLose,74.0,Team Beige,91.25
-2025-26,23,UFOE FC,94.0,Kane and Owl Albion,92.5
+2025-26,23,AFC Pleasures,88.0,The Cobras,81.25
 2025-26,23,Berge King,93.5,Pun on a Footballers Name,79.0
-2025-26,24,Rainham Steel Select XI,122.25,AFC Pleasures,112.5
+2025-26,23,Kante Kepa Clean Sheet,91.5,Rainham Steel Select XI,94.25
+2025-26,23,THE MIKES TINY PENISES,100.75,Rapid Viennetta,119.75
+2025-26,23,UFOE FC,94.0,Kane and Owl Albion,92.5
+2025-26,24,Kane and Owl Albion,118.0,Pun on a Footballers Name,88.5
 2025-26,24,Kante Kepa Clean Sheet,45.25,THE MIKES TINY PENISES,122.0
-2025-26,24,The Cobras,119.5,#WinOrLose,94.0
+2025-26,24,Rainham Steel Select XI,122.25,AFC Pleasures,112.5
 2025-26,24,Rapid Viennetta,67.25,UFOE FC,104.25
 2025-26,24,Team Beige,81.5,Berge King,105.25
-2025-26,24,Kane and Owl Albion,118.0,Pun on a Footballers Name,88.5
-2025-26,25,THE MIKES TINY PENISES,76.75,Rainham Steel Select XI,87.25
-2025-26,25,#WinOrLose,83.25,AFC Pleasures,106.75
-2025-26,25,UFOE FC,97.0,Kante Kepa Clean Sheet,108.25
+2025-26,24,The Cobras,119.5,#WinOrLose,94.0
+2025-26,25,#WinOrLose,84.25,AFC Pleasures,106.75
 2025-26,25,Berge King,106.0,The Cobras,95.75
-2025-26,25,Pun on a Footballers Name,87.0,Rapid Viennetta,113.75
 2025-26,25,Kane and Owl Albion,118.75,Team Beige,69.5
-2025-26,26,Rainham Steel Select XI,130.75,#WinOrLose,87.0
-2025-26,26,THE MIKES TINY PENISES,119.25,UFOE FC,63.5
+2025-26,25,Pun on a Footballers Name,87.0,Rapid Viennetta,113.75
+2025-26,25,THE MIKES TINY PENISES,76.75,Rainham Steel Select XI,87.25
+2025-26,25,UFOE FC,97.0,Kante Kepa Clean Sheet,108.25
 2025-26,26,AFC Pleasures,136.25,Berge King,112.5
 2025-26,26,Kante Kepa Clean Sheet,112.75,Pun on a Footballers Name,111.0
-2025-26,26,The Cobras,94.0,Kane and Owl Albion,96.0
+2025-26,26,Rainham Steel Select XI,130.75,#WinOrLose,87.0
 2025-26,26,Rapid Viennetta,46.25,Team Beige,76.25
-2025-26,27,UFOE FC,75.0,Rainham Steel Select XI,107.25
+2025-26,26,THE MIKES TINY PENISES,119.25,UFOE FC,63.5
+2025-26,26,The Cobras,94.0,Kane and Owl Albion,96.0
 2025-26,27,Berge King,80.5,#WinOrLose,119.5
-2025-26,27,Pun on a Footballers Name,83.75,THE MIKES TINY PENISES,83.5
 2025-26,27,Kane and Owl Albion,81.0,AFC Pleasures,97.25
-2025-26,27,Team Beige,69.0,Kante Kepa Clean Sheet,104.25
+2025-26,27,Pun on a Footballers Name,83.75,THE MIKES TINY PENISES,83.5
 2025-26,27,Rapid Viennetta,143.75,The Cobras,87.0
-2025-26,28,Rainham Steel Select XI,98.75,Berge King,122.0
-2025-26,28,UFOE FC,88.5,Pun on a Footballers Name,149.25
+2025-26,27,Team Beige,69.0,Kante Kepa Clean Sheet,104.25
+2025-26,27,UFOE FC,75.0,Rainham Steel Select XI,107.25
 2025-26,28,#WinOrLose,56.25,Kane and Owl Albion,79.5
-2025-26,28,THE MIKES TINY PENISES,142.75,Team Beige,104.0
 2025-26,28,AFC Pleasures,102.75,Rapid Viennetta,85.25
 2025-26,28,Kante Kepa Clean Sheet,57.0,The Cobras,103.75
-2025-26,29,Pun on a Footballers Name,140.0,Rainham Steel Select XI,94.75
+2025-26,28,Rainham Steel Select XI,98.75,Berge King,122.0
+2025-26,28,THE MIKES TINY PENISES,142.75,Team Beige,104.0
+2025-26,28,UFOE FC,88.5,Pun on a Footballers Name,149.25
 2025-26,29,Kane and Owl Albion,99.75,Berge King,100.5
-2025-26,29,Team Beige,80.75,UFOE FC,76.5
-2025-26,29,Rapid Viennetta,96.5,#WinOrLose,104.5
-2025-26,29,The Cobras,97.25,THE MIKES TINY PENISES,103.25
 2025-26,29,Kante Kepa Clean Sheet,85.75,AFC Pleasures,117.25
-2025-26,30,Rainham Steel Select XI,85.75,Kane and Owl Albion,97.75
-2025-26,30,Pun on a Footballers Name,73.75,Team Beige,93.5
-2025-26,30,Berge King,103.0,Rapid Viennetta,70.25
-2025-26,30,UFOE FC,134.5,The Cobras,104.75
+2025-26,29,Pun on a Footballers Name,140.0,Rainham Steel Select XI,94.75
+2025-26,29,Rapid Viennetta,96.5,#WinOrLose,104.5
+2025-26,29,Team Beige,80.75,UFOE FC,76.5
+2025-26,29,The Cobras,97.25,THE MIKES TINY PENISES,103.25
 2025-26,30,#WinOrLose,56.5,Kante Kepa Clean Sheet,89.0
+2025-26,30,Berge King,103.0,Rapid Viennetta,70.25
+2025-26,30,Pun on a Footballers Name,73.75,Team Beige,93.5
+2025-26,30,Rainham Steel Select XI,85.75,Kane and Owl Albion,97.75
 2025-26,30,THE MIKES TINY PENISES,114.5,AFC Pleasures,101.5
-2025-26,31,Team Beige,94.0,Rainham Steel Select XI,75.0
-2025-26,31,Rapid Viennetta,98.75,Kane and Owl Albion,89.75
-2025-26,31,The Cobras,105.25,Pun on a Footballers Name,137.25
-2025-26,31,Kante Kepa Clean Sheet,80.5,Berge King,122.25
+2025-26,30,UFOE FC,134.5,The Cobras,104.75
 2025-26,31,AFC Pleasures,92.0,UFOE FC,64.75
+2025-26,31,Kante Kepa Clean Sheet,80.5,Berge King,122.25
+2025-26,31,Rapid Viennetta,98.75,Kane and Owl Albion,89.75
 2025-26,31,THE MIKES TINY PENISES,114.25,#WinOrLose,75.75
-2025-26,32,Pun on a Footballers Name,155.0,AFC Pleasures,104.5
+2025-26,31,Team Beige,94.0,Rainham Steel Select XI,75.0
+2025-26,31,The Cobras,105.25,Pun on a Footballers Name,137.25
 2025-26,32,Berge King,95.5,THE MIKES TINY PENISES,132.5
 2025-26,32,Kane and Owl Albion,98.25,Kante Kepa Clean Sheet,121.5
+2025-26,32,Pun on a Footballers Name,155.0,AFC Pleasures,104.5
 2025-26,32,Rainham Steel Select XI,144.0,Rapid Viennetta,107.25
 2025-26,32,Team Beige,97.75,The Cobras,88.25
 2025-26,32,UFOE FC,85.0,#WinOrLose,101.25
-2025-26,33,Rainham Steel Select XI,143.25,The Cobras,108.0
-2025-26,33,Kante Kepa Clean Sheet,127.25,Rapid Viennetta,185.0
-2025-26,33,AFC Pleasures,166.75,Team Beige,94.75
-2025-26,33,THE MIKES TINY PENISES,152.25,Kane and Owl Albion,112.5
 2025-26,33,#WinOrLose,87.5,Pun on a Footballers Name,118.5
-2025-26,33,UFOE FC,151.25,Berge King,157.26
-2025-26,34,Rainham Steel Select XI,48.0,Kante Kepa Clean Sheet,64.75
-2025-26,34,The Cobras,106.25,AFC Pleasures,116.0
-2025-26,34,Rapid Viennetta,119.75,THE MIKES TINY PENISES,85.25
-2025-26,34,Team Beige,94.5,#WinOrLose,92.0
+2025-26,33,AFC Pleasures,166.75,Team Beige,94.75
+2025-26,33,Kante Kepa Clean Sheet,127.25,Rapid Viennetta,185.0
+2025-26,33,THE MIKES TINY PENISES,152.25,Kane and Owl Albion,112.5
+2025-26,33,The Cobras,108.0,Rainham Steel Select XI,143.25
+2025-26,33,UFOE FC,151.25,Berge King,157.25
 2025-26,34,Kane and Owl Albion,70.5,UFOE FC,67.75
 2025-26,34,Pun on a Footballers Name,106.0,Berge King,86.0
-2025-26,35,AFC Pleasures,118.25,Rainham Steel Select XI,61.25
-2025-26,35,THE MIKES TINY PENISES,119.75,Kante Kepa Clean Sheet,57.75
+2025-26,34,Rainham Steel Select XI,48.0,Kante Kepa Clean Sheet,64.75
+2025-26,34,Rapid Viennetta,119.75,THE MIKES TINY PENISES,85.25
+2025-26,34,Team Beige,94.5,#WinOrLose,92.0
+2025-26,34,The Cobras,106.25,AFC Pleasures,116.0
 2025-26,35,#WinOrLose,118.5,The Cobras,109.25
-2025-26,35,UFOE FC,83.5,Rapid Viennetta,157.5
+2025-26,35,AFC Pleasures,118.25,Rainham Steel Select XI,61.25
 2025-26,35,Berge King,99.75,Team Beige,99.0
 2025-26,35,Pun on a Footballers Name,67.75,Kane and Owl Albion,90.5
-2025-26,36,Rainham Steel Select XI,74.75,THE MIKES TINY PENISES,121.75
+2025-26,35,THE MIKES TINY PENISES,119.75,Kante Kepa Clean Sheet,57.75
+2025-26,35,UFOE FC,83.5,Rapid Viennetta,157.5
 2025-26,36,AFC Pleasures,116.25,#WinOrLose,108.5
 2025-26,36,Kante Kepa Clean Sheet,106.75,UFOE FC,98.5
-2025-26,36,The Cobras,106.75,Berge King,81.75
+2025-26,36,Rainham Steel Select XI,74.75,THE MIKES TINY PENISES,121.75
 2025-26,36,Rapid Viennetta,129.5,Pun on a Footballers Name,147.0
 2025-26,36,Team Beige,92.0,Kane and Owl Albion,78.0
+2025-26,36,The Cobras,106.75,Berge King,81.75
 2025-26,37,#WinOrLose,46.0,Rainham Steel Select XI,88.25
-2025-26,37,UFOE FC,137.5,THE MIKES TINY PENISES,97.5
 2025-26,37,Berge King,135.0,AFC Pleasures,136.75
-2025-26,37,Pun on a Footballers Name,121.0,Kante Kepa Clean Sheet,94.25
 2025-26,37,Kane and Owl Albion,75.25,The Cobras,83.5
+2025-26,37,Pun on a Footballers Name,121.0,Kante Kepa Clean Sheet,94.25
 2025-26,37,Team Beige,34.5,Rapid Viennetta,110.0
-2025-26,38,Rainham Steel Select XI,88.75,UFOE FC,75.25
-2025-26,38,#WinOrLose,104.75,Berge King,87.25
-2025-26,38,THE MIKES TINY PENISES,65.0,Pun on a Footballers Name,148.75
-2025-26,38,AFC Pleasures,78.75,Kane and Owl Albion,93.5
-2025-26,38,Kante Kepa Clean Sheet,77.0,Team Beige,72.5
-2025-26,38,The Cobras,60.5,Rapid Viennetta,104.5
+2025-26,37,UFOE FC,137.5,THE MIKES TINY PENISES,97.5
+2025-26,38,#WinOrLose,105.75,Berge King,90.75
+2025-26,38,AFC Pleasures,81.0,Kane and Owl Albion,96.5
+2025-26,38,Kante Kepa Clean Sheet,76.5,Team Beige,75.25
+2025-26,38,Rainham Steel Select XI,88.5,UFOE FC,76.25
+2025-26,38,THE MIKES TINY PENISES,65.75,Pun on a Footballers Name,144.5
+2025-26,38,The Cobras,61.5,Rapid Viennetta,104.25
